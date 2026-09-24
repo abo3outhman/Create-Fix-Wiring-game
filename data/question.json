@@ -1,0 +1,404 @@
+{
+	"categories": [
+		{
+			"id": "descriptive_statistics",
+			"name": {
+				"en": "Descriptive Statistics",
+				"ar": "الإحصاء الوصفي",
+				"fr": "Statistiques descriptives"
+			},
+			"questions": [
+				{
+					"id": "stats_01",
+					"question": {
+						"en": "What does the median represent?",
+						"ar": "ماذا يمثل الوسيط؟",
+						"fr": "Que représente la médiane ?"
+					},
+					"options": {
+						"en": ["Most frequent value", "Middle value", "Average", "Maximum value", "Smallest value"],
+						"ar": ["القيمة الأكثر تكرارًا", "القيمة الوسطى", "المتوسط", "أكبر قيمة", "أصغر قيمة"],
+						"fr": ["Valeur la plus fréquente", "Valeur du milieu", "Moyenne", "Valeur maximale", "Plus petite valeur"]
+					},
+					"correct": 1
+				},
+				{
+					"id": "stats_02",
+					"question": {
+						"en": "Which measure is found by adding values and dividing by their count?",
+						"ar": "ما هو المقياس الذي نحصل عليه بجمع القيم وقسمتها على عددها؟",
+						"fr": "Quelle mesure obtient-on en additionnant les valeurs puis en divisant par leur nombre ?"
+					},
+					"options": {
+						"en": ["Mean", "Mode", "Range", "Median", "Variance"],
+						"ar": ["المتوسط الحسابي", "المنوال", "المدى", "الوسيط", "التباين"],
+						"fr": ["Moyenne", "Mode", "Étendue", "Médiane", "Variance"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "stats_03",
+					"question": {
+						"en": "What is the mode of the values 2, 3, 3, 4, and 5?",
+						"ar": "ما هو المنوال للقيم 2 و3 و3 و4 و5؟",
+						"fr": "Quel est le mode des valeurs 2, 3, 3, 4 et 5 ?"
+					},
+					"options": {
+						"en": ["2", "3", "4", "5", "There is no mode"],
+						"ar": ["2", "3", "4", "5", "لا يوجد منوال"],
+						"fr": ["2", "3", "4", "5", "Il n’y a pas de mode"]
+					},
+					"correct": 1
+				},
+				{
+					"id": "stats_04",
+					"question": {
+						"en": "Which chart is usually best for comparing categories?",
+						"ar": "أي رسم بياني يكون عادةً الأفضل لمقارنة الفئات؟",
+						"fr": "Quel graphique est généralement le meilleur pour comparer des catégories ?"
+					},
+					"options": {
+						"en": ["Bar chart", "Line chart", "Map", "Scatter plot", "Timeline"],
+						"ar": ["مخطط الأعمدة", "المخطط الخطي", "الخريطة", "مخطط التشتت", "الخط الزمني"],
+						"fr": ["Diagramme en barres", "Graphique linéaire", "Carte", "Nuage de points", "Frise chronologique"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "stats_05",
+					"question": {
+						"en": "What does a large range tell us about a dataset?",
+						"ar": "ماذا يخبرنا المدى الكبير عن مجموعة بيانات؟",
+						"fr": "Que nous indique une grande étendue dans un ensemble de données ?"
+					},
+					"options": {
+						"en": ["Values are spread widely", "All values are equal", "There are no values", "The average is zero", "The data is always wrong"],
+						"ar": ["القيم متباعدة بشكل كبير", "كل القيم متساوية", "لا توجد قيم", "المتوسط يساوي صفرًا", "البيانات خاطئة دائمًا"],
+						"fr": ["Les valeurs sont très dispersées", "Toutes les valeurs sont égales", "Il n’y a aucune valeur", "La moyenne est nulle", "Les données sont toujours fausses"]
+					},
+					"correct": 0
+				}
+			]
+		},
+		{
+			"id": "probability",
+			"name": {
+				"en": "Probability",
+				"ar": "الاحتمالات",
+				"fr": "Probabilités"
+			},
+			"questions": [
+				{
+					"id": "probability_01",
+					"question": {
+						"en": "What is the probability of getting heads when tossing a fair coin?",
+						"ar": "ما احتمال الحصول على الوجه عند رمي قطعة نقدية عادلة؟",
+						"fr": "Quelle est la probabilité d’obtenir pile en lançant une pièce équilibrée ?"
+					},
+					"options": {
+						"en": ["0%", "25%", "50%", "75%", "100%"],
+						"ar": ["0٪", "25٪", "50٪", "75٪", "100٪"],
+						"fr": ["0 %", "25 %", "50 %", "75 %", "100 %"]
+					},
+					"correct": 2
+				},
+				{
+					"id": "probability_02",
+					"question": {
+						"en": "A standard die has six sides. What is the chance of rolling a 6?",
+						"ar": "للنرد العادي ستة أوجه. ما احتمال الحصول على الرقم 6؟",
+						"fr": "Un dé classique a six faces. Quelle est la chance d’obtenir un 6 ?"
+					},
+					"options": {
+						"en": ["1 in 2", "1 in 3", "1 in 4", "1 in 5", "1 in 6"],
+						"ar": ["1 من 2", "1 من 3", "1 من 4", "1 من 5", "1 من 6"],
+						"fr": ["1 sur 2", "1 sur 3", "1 sur 4", "1 sur 5", "1 sur 6"]
+					},
+					"correct": 4
+				},
+				{
+					"id": "probability_03",
+					"question": {
+						"en": "If an event is certain to happen, its probability is:",
+						"ar": "إذا كان وقوع حدث مؤكدًا، فإن احتماله يساوي:",
+						"fr": "Si un événement est certain de se produire, sa probabilité est de :"
+					},
+					"options": {
+						"en": ["0", "0.25", "0.5", "0.75", "1"],
+						"ar": ["0", "0.25", "0.5", "0.75", "1"],
+						"fr": ["0", "0,25", "0,5", "0,75", "1"]
+					},
+					"correct": 4
+				},
+				{
+					"id": "probability_04",
+					"question": {
+						"en": "What does it mean when two events are equally likely?",
+						"ar": "ماذا يعني أن حدثين متساويا الاحتمال؟",
+						"fr": "Que signifie que deux événements sont équiprobables ?"
+					},
+					"options": {
+						"en": ["They have the same chance", "They happen together", "Neither can happen", "One always happens first", "They are impossible"],
+						"ar": ["لهما نفس فرصة الحدوث", "يحدثان معًا", "لا يمكن أن يحدث أي منهما", "يحدث أحدهما أولًا دائمًا", "هما مستحيلان"],
+						"fr": ["Ils ont la même chance", "Ils se produisent ensemble", "Aucun ne peut se produire", "L’un arrive toujours en premier", "Ils sont impossibles"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "probability_05",
+					"question": {
+						"en": "A bag has 3 blue balls and 1 yellow ball. Which color is more likely to be picked?",
+						"ar": "يحتوي كيس على 3 كرات زرقاء و1 كرة صفراء. أي لون هو الأكثر احتمالًا للسحب؟",
+						"fr": "Un sac contient 3 boules bleues et 1 boule jaune. Quelle couleur a le plus de chances d’être tirée ?"
+					},
+					"options": {
+						"en": ["Blue", "Yellow", "Both are equal", "Neither", "It cannot be known"],
+						"ar": ["الأزرق", "الأصفر", "لهما نفس الاحتمال", "لا واحدة منهما", "لا يمكن معرفة ذلك"],
+						"fr": ["Bleu", "Jaune", "Elles sont équiprobables", "Aucune", "On ne peut pas le savoir"]
+					},
+					"correct": 0
+				}
+			]
+		},
+		{
+			"id": "microeconomics",
+			"name": {
+				"en": "Microeconomics",
+				"ar": "الاقتصاد الجزئي",
+				"fr": "Microéconomie"
+			},
+			"questions": [
+				{
+					"id": "micro_01",
+					"question": {
+						"en": "What usually happens to demand when the price of a product falls?",
+						"ar": "ماذا يحدث عادةً للطلب عندما ينخفض سعر منتج؟",
+						"fr": "Que se passe-t-il généralement pour la demande lorsque le prix d’un produit baisse ?"
+					},
+					"options": {
+						"en": ["Demand tends to increase", "Demand always disappears", "Demand stays at zero", "Supply becomes demand", "Nothing can change"],
+						"ar": ["يميل الطلب إلى الارتفاع", "يختفي الطلب دائمًا", "يبقى الطلب عند الصفر", "يصبح العرض طلبًا", "لا يمكن أن يتغير شيء"],
+						"fr": ["La demande tend à augmenter", "La demande disparaît toujours", "La demande reste nulle", "L’offre devient la demande", "Rien ne peut changer"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "micro_02",
+					"question": {
+						"en": "What is a consumer?",
+						"ar": "ما هو المستهلك؟",
+						"fr": "Qu’est-ce qu’un consommateur ?"
+					},
+					"options": {
+						"en": ["Someone who buys or uses goods", "A company that produces goods", "A government tax", "A market price", "A type of currency"],
+						"ar": ["شخص يشتري أو يستعمل السلع", "شركة تنتج السلع", "ضريبة حكومية", "سعر السوق", "نوع من العملات"],
+						"fr": ["Une personne qui achète ou utilise des biens", "Une entreprise qui produit des biens", "Une taxe publique", "Un prix de marché", "Un type de monnaie"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "micro_03",
+					"question": {
+						"en": "What does a shortage mean in a market?",
+						"ar": "ماذا يعني النقص في السوق؟",
+						"fr": "Que signifie une pénurie sur un marché ?"
+					},
+					"options": {
+						"en": ["Demand is greater than available supply", "Supply is greater than demand", "Prices never change", "There are no consumers", "A product is free"],
+						"ar": ["الطلب أكبر من العرض المتاح", "العرض أكبر من الطلب", "الأسعار لا تتغير أبدًا", "لا يوجد مستهلكون", "المنتج مجاني"],
+						"fr": ["La demande est supérieure à l’offre disponible", "L’offre est supérieure à la demande", "Les prix ne changent jamais", "Il n’y a pas de consommateurs", "Un produit est gratuit"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "micro_04",
+					"question": {
+						"en": "What is a budget used for?",
+						"ar": "فيما تُستخدم الميزانية؟",
+						"fr": "À quoi sert un budget ?"
+					},
+					"options": {
+						"en": ["Planning income and spending", "Measuring temperature", "Counting population only", "Choosing a company logo", "Predicting the weather"],
+						"ar": ["تخطيط الدخل والإنفاق", "قياس درجة الحرارة", "عدّ السكان فقط", "اختيار شعار شركة", "توقع الطقس"],
+						"fr": ["Planifier les revenus et les dépenses", "Mesurer la température", "Compter uniquement la population", "Choisir un logo d’entreprise", "Prévoir la météo"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "micro_05",
+					"question": {
+						"en": "What is competition between businesses likely to encourage?",
+						"ar": "إلى ماذا تؤدي المنافسة بين الشركات غالبًا؟",
+						"fr": "Qu’est-ce que la concurrence entre entreprises peut généralement encourager ?"
+					},
+					"options": {
+						"en": ["Better prices or products", "No choices for customers", "The end of all markets", "Guaranteed losses", "Fewer ideas"],
+						"ar": ["أسعار أو منتجات أفضل", "عدم وجود خيارات للعملاء", "نهاية جميع الأسواق", "خسائر مضمونة", "أفكار أقل"],
+						"fr": ["De meilleurs prix ou produits", "Aucun choix pour les clients", "La fin de tous les marchés", "Des pertes garanties", "Moins d’idées"]
+					},
+					"correct": 0
+				}
+			]
+		},
+		{
+			"id": "ai_data_science",
+			"name": {
+				"en": "AI & Data Science",
+				"ar": "الذكاء الاصطناعي وعلوم البيانات",
+				"fr": "IA et science des données"
+			},
+			"questions": [
+				{
+					"id": "ai_01",
+					"question": {
+						"en": "What is machine learning?",
+						"ar": "ما هو التعلم الآلي؟",
+						"fr": "Qu’est-ce que l’apprentissage automatique ?"
+					},
+					"options": {
+						"en": ["A system learning patterns from data", "A machine repairing itself", "A faster internet connection", "A type of battery", "A human-only study method"],
+						"ar": ["نظام يتعلم الأنماط من البيانات", "آلة تصلح نفسها", "اتصال إنترنت أسرع", "نوع من البطاريات", "طريقة دراسة بشرية فقط"],
+						"fr": ["Un système qui apprend des modèles à partir de données", "Une machine qui se répare seule", "Une connexion internet plus rapide", "Un type de batterie", "Une méthode d’étude uniquement humaine"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "ai_02",
+					"question": {
+						"en": "Which is an example of structured data?",
+						"ar": "أي مما يلي مثال على البيانات المنظمة؟",
+						"fr": "Lequel est un exemple de données structurées ?"
+					},
+					"options": {
+						"en": ["A table of names and ages", "A movie soundtrack", "An unlabelled photo", "A spoken conversation", "A handwritten story"],
+						"ar": ["جدول للأسماء والأعمار", "موسيقى فيلم", "صورة غير معنونة", "محادثة منطوقة", "قصة مكتوبة بخط اليد"],
+						"fr": ["Un tableau de noms et d’âges", "La bande-son d’un film", "Une photo non étiquetée", "Une conversation orale", "Une histoire manuscrite"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "ai_03",
+					"question": {
+						"en": "What is data visualization?",
+						"ar": "ما هو تصور البيانات؟",
+						"fr": "Qu’est-ce que la visualisation des données ?"
+					},
+					"options": {
+						"en": ["Showing data using charts or graphics", "Deleting all data", "Encrypting a password", "Writing computer hardware", "Printing only text"],
+						"ar": ["عرض البيانات باستخدام المخططات أو الرسومات", "حذف جميع البيانات", "تشفير كلمة مرور", "كتابة مكونات الحاسوب", "طباعة النص فقط"],
+						"fr": ["Présenter les données avec des graphiques", "Supprimer toutes les données", "Chiffrer un mot de passe", "Écrire du matériel informatique", "Imprimer uniquement du texte"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "ai_04",
+					"question": {
+						"en": "Why is data quality important?",
+						"ar": "لماذا تُعد جودة البيانات مهمة؟",
+						"fr": "Pourquoi la qualité des données est-elle importante ?"
+					},
+					"options": {
+						"en": ["It helps produce more reliable results", "It makes every answer random", "It removes the need for questions", "It guarantees perfect predictions", "It hides all information"],
+						"ar": ["تساعد على إنتاج نتائج أكثر موثوقية", "تجعل كل إجابة عشوائية", "تلغي الحاجة إلى الأسئلة", "تضمن تنبؤات مثالية", "تخفي كل المعلومات"],
+						"fr": ["Elle aide à produire des résultats plus fiables", "Elle rend chaque réponse aléatoire", "Elle supprime le besoin de questions", "Elle garantit des prévisions parfaites", "Elle cache toutes les informations"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "ai_05",
+					"question": {
+						"en": "What is an algorithm?",
+						"ar": "ما هي الخوارزمية؟",
+						"fr": "Qu’est-ce qu’un algorithme ?"
+					},
+					"options": {
+						"en": ["A set of steps for solving a problem", "A computer screen", "A type of file", "A wireless signal", "A physical storage box"],
+						"ar": ["مجموعة خطوات لحل مشكلة", "شاشة حاسوب", "نوع من الملفات", "إشارة لاسلكية", "صندوق تخزين مادي"],
+						"fr": ["Un ensemble d’étapes pour résoudre un problème", "Un écran d’ordinateur", "Un type de fichier", "Un signal sans fil", "Une boîte de stockage physique"]
+					},
+					"correct": 0
+				}
+			]
+		},
+		{
+			"id": "general_knowledge",
+			"name": {
+				"en": "General Knowledge",
+				"ar": "المعرفة العامة",
+				"fr": "Culture générale"
+			},
+			"questions": [
+				{
+					"id": "general_01",
+					"question": {
+						"en": "Which planet is known as the Red Planet?",
+						"ar": "أي كوكب يُعرف باسم الكوكب الأحمر؟",
+						"fr": "Quelle planète est connue sous le nom de planète rouge ?"
+					},
+					"options": {
+						"en": ["Mars", "Venus", "Jupiter", "Mercury", "Neptune"],
+						"ar": ["المريخ", "الزهرة", "المشتري", "عطارد", "نبتون"],
+						"fr": ["Mars", "Vénus", "Jupiter", "Mercure", "Neptune"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "general_02",
+					"question": {
+						"en": "How many continents are commonly taught in the world?",
+						"ar": "كم عدد القارات التي يتم تدريسها عادةً في العالم؟",
+						"fr": "Combien de continents enseigne-t-on généralement dans le monde ?"
+					},
+					"options": {
+						"en": ["5", "6", "7", "8", "9"],
+						"ar": ["5", "6", "7", "8", "9"],
+						"fr": ["5", "6", "7", "8", "9"]
+					},
+					"correct": 2
+				},
+				{
+					"id": "general_03",
+					"question": {
+						"en": "What gas do humans need to breathe?",
+						"ar": "ما الغاز الذي يحتاجه الإنسان للتنفس؟",
+						"fr": "Quel gaz les humains ont-ils besoin de respirer ?"
+					},
+					"options": {
+						"en": ["Oxygen", "Helium", "Carbon dioxide", "Hydrogen", "Neon"],
+						"ar": ["الأكسجين", "الهيليوم", "ثاني أكسيد الكربون", "الهيدروجين", "النيون"],
+						"fr": ["Oxygène", "Hélium", "Dioxyde de carbone", "Hydrogène", "Néon"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "general_04",
+					"question": {
+						"en": "What is the main source of energy for Earth?",
+						"ar": "ما المصدر الرئيسي للطاقة على الأرض؟",
+						"fr": "Quelle est la principale source d’énergie de la Terre ?"
+					},
+					"options": {
+						"en": ["The Sun", "The Moon", "The oceans", "Wind only", "Volcanoes only"],
+						"ar": ["الشمس", "القمر", "المحيطات", "الرياح فقط", "البراكين فقط"],
+						"fr": ["Le Soleil", "La Lune", "Les océans", "Le vent uniquement", "Les volcans uniquement"]
+					},
+					"correct": 0
+				},
+				{
+					"id": "general_05",
+					"question": {
+						"en": "Which tool is used to measure temperature?",
+						"ar": "أي أداة تُستخدم لقياس درجة الحرارة؟",
+						"fr": "Quel outil sert à mesurer la température ?"
+					},
+					"options": {
+						"en": ["Thermometer", "Compass", "Ruler", "Barometer", "Microscope"],
+						"ar": ["مقياس الحرارة", "البوصلة", "المسطرة", "مقياس الضغط الجوي", "المجهر"],
+						"fr": ["Thermomètre", "Boussole", "Règle", "Baromètre", "Microscope"]
+					},
+					"correct": 0
+				}
+			]
+		}
+	]
+}

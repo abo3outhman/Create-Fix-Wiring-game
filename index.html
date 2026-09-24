@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Data Space wiring challenge for ENSSEA Open Day">
+	<title>Data Space | Wiring Challenge</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="star-field" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<a class="brand" href="#top" aria-label="Data Space home">
+			<img class="brand-logo" src="assets/data_space.svg" alt="Data Space">
+			<span>
+				<strong>DATA SPACE</strong>
+				<small>ENSSEA OPEN DAY</small>
+			</span>
+		</a>
+		<div class="status-pill"><span class="status-dot"></span> SHIP SYSTEMS ONLINE</div>
+	</header>
+
+	<main id="top">
+		<section class="screen language-screen" id="language-screen" aria-labelledby="language-title">
+			<div class="language-copy">
+				<p class="eyebrow">STEP 01 / MISSION SETUP</p>
+				<h1 id="language-title">Choose the<br><span>question language</span></h1>
+				<p class="intro">Choose the language for your questions. The game interface stays in English; only the questions will use your selected language.</p>
+			</div>
+
+			<div class="language-console" role="group" aria-labelledby="language-choice-label">
+				<p id="language-choice-label">QUESTION LANGUAGE</p>
+				<div class="language-options">
+					<button class="language-option" type="button" data-language="ar"><strong>AR</strong><span>Arabic</span></button>
+					<button class="language-option" type="button" data-language="fr"><strong>FR</strong><span>Français</span></button>
+					<button class="language-option" type="button" data-language="en"><strong>ENG</strong><span>English</span></button>
+				</div>
+			</div>
+
+			<div class="orbit orbit-one" aria-hidden="true"></div>
+			<div class="orbit orbit-two" aria-hidden="true"></div>
+			<div class="crew-silhouette" aria-hidden="true"><span class="visor"></span></div>
+		</section>
+
+		<section class="screen welcome-screen is-hidden" id="welcome-screen" aria-labelledby="welcome-title">
+			<div class="welcome-copy">
+				<p class="eyebrow">STEP 02 / CHOOSE A NICKNAME</p>
+				<h1 id="welcome-title">Fix the wires.<br><span>Prove your skills.</span></h1>
+			</div>
+
+			<form class="name-console" id="name-form">
+				<label for="player-name">Enter your crew name</label>
+				<div class="name-entry">
+					<span class="input-prefix">&gt;</span>
+					<input id="player-name" name="player-name" type="text" maxlength="18" placeholder="YOUR NICKNAME" autocomplete="nickname" required>
+				</div>
+				<button class="primary-button" type="submit">START MISSION <span aria-hidden="true">→</span></button>
+			</form>
+
+			<div class="orbit orbit-one" aria-hidden="true"></div>
+			<div class="orbit orbit-two" aria-hidden="true"></div>
+			<div class="crew-silhouette" aria-hidden="true"><span class="visor"></span></div>
+		</section>
+
+		<section class="screen rules-screen is-hidden" id="rules-screen" aria-labelledby="rules-title">
+			<div class="rules-panel">
+				<p class="eyebrow">MISSION BRIEFING</p>
+				<h1 id="rules-title">Know the rules.<br><span>Then fix the wires.</span></h1>
+				<ul class="rules-list">
+					<li>Every player starts with <strong>20 points</strong>.</li>
+					<li>You will answer <strong>5 questions</strong>, one from each topic.</li>
+					<li>A correct answer on your first try costs <strong>0 points</strong>.</li>
+					<li>Each wrong try costs <strong>1 point</strong> until you find the correct answer.</li>
+					<li>A wrong answer turns <strong class="wrong-answer-text">red</strong> and cannot be chosen again.</li>
+				</ul>
+				<button class="primary-button rules-start-button" id="start-game-button" type="button">START GAME <span aria-hidden="true">→</span></button>
+			</div>
+		</section>
+
+		<section class="screen game-screen is-hidden" id="game-screen" aria-labelledby="game-title">
+			<div class="game-heading">
+				<div>
+					<p class="eyebrow">TASK / ELECTRICAL</p>
+					<h2 id="game-title">Connect the data wires</h2>
+					<p class="mission-copy">Answer the question to route each wire to its matching symbol.</p>
+				</div>
+				<div class="game-readouts">
+					<div class="score-readout"><span>SCORE</span><strong id="score-value">20</strong><small>POINTS</small></div>
+					<div class="crew-readout"><span>CREW</span><strong id="crew-name">PLAYER</strong></div>
+				</div>
+			</div>
+
+			<div class="game-meta" role="group" aria-label="Mission progress">
+				<span>PROGRESS</span>
+				<div class="progress-track"><span class="progress-quarter"></span></div>
+				<strong id="progress-label">1 / 5 QUESTIONS</strong>
+			</div>
+
+			<ul class="topic-strip" id="topic-strip" aria-label="Topic list">
+				<li class="topic-pill is-visible is-active" data-category="descriptive_statistics">Descriptive Statistics</li>
+				<li class="topic-pill" data-category="probability">Probability</li>
+				<li class="topic-pill" data-category="microeconomics">Economics</li>
+				<li class="topic-pill" data-category="ai_data_science">AI &amp; Data</li>
+				<li class="topic-pill" data-category="general_knowledge">General Knowledge</li>
+			</ul>
+
+			<section class="wiring-board" aria-label="Wiring board">
+				<div class="panel-label left-label">SIGNALS <span>INPUT</span></div>
+				<div class="panel-label right-label">DESTINATIONS <span>OUTPUT</span></div>
+				<div class="wire-lines" aria-hidden="true">
+					<span class="wire-line wire-yellow" data-category="descriptive_statistics"></span>
+					<span class="wire-line wire-blue" data-category="probability"></span>
+					<span class="wire-line wire-orange" data-category="microeconomics"></span>
+					<span class="wire-line wire-pink" data-category="ai_data_science"></span>
+					<span class="wire-line wire-cyan" data-category="general_knowledge"></span>
+				</div>
+				<div class="wire-column left-wires">
+					<button class="wire-node node-yellow" data-category="descriptive_statistics" type="button" aria-label="Yellow statistics wire"><span class="symbol">○</span><span class="wire-name">Statistics</span></button>
+					<button class="wire-node node-blue" data-category="probability" type="button" aria-label="Blue probability wire"><span class="symbol">×</span><span class="wire-name">Probability</span></button>
+					<button class="wire-node node-orange" data-category="microeconomics" type="button" aria-label="Orange economics wire"><span class="symbol">△</span><span class="wire-name">Economics</span></button>
+					<button class="wire-node node-pink" data-category="ai_data_science" type="button" aria-label="Pink AI and data wire"><span class="symbol">★</span><span class="wire-name">AI &amp; Data</span></button>
+					<button class="wire-node node-cyan" data-category="general_knowledge" type="button" aria-label="Cyan general knowledge wire"><span class="symbol">◇</span><span class="wire-name">General Knowledge</span></button>
+				</div>
+				<div class="wire-column right-wires">
+					<button class="wire-node node-blue" type="button" aria-label="Blue cross destination"><span class="symbol">×</span></button>
+					<button class="wire-node node-pink" type="button" aria-label="Pink star destination"><span class="symbol">★</span></button>
+					<button class="wire-node node-yellow" type="button" aria-label="Yellow circle destination"><span class="symbol">○</span></button>
+					<button class="wire-node node-orange" type="button" aria-label="Orange triangle destination"><span class="symbol">△</span></button>
+					<button class="wire-node node-cyan" type="button" aria-label="Cyan diamond destination"><span class="symbol">◇</span></button>
+				</div>
+
+				<div class="question-card" id="question-card">
+					<div class="question-heading"><span class="question-number" id="question-number">Q01</span><span class="question-category" id="question-category">LOADING</span></div>
+					<h3 id="question-text">Loading your first question...</h3>
+					<button class="secondary-button next-button is-hidden" id="next-question-button" type="button">NEXT QUESTION <span aria-hidden="true">→</span></button>
+				</div>
+				<div class="answer-options" id="answer-options"></div>
+				<p class="answer-feedback" id="answer-feedback" role="status"></p>
+			</section>
+		</section>
+
+	</main>
+
+	<footer class="site-footer"><span>DATA SPACE / ENSSEA</span><span>OPEN DAY 2026</span><span>STATIC MISSION BUILD</span></footer>
+	<script src="scripts/state.js" defer></script>
+	<script src="scripts/wireAnimation.js" defer></script>
+	<script src="scripts/main.js" defer></script>
+</body>
+</html>

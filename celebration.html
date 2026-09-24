@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Data Space | Mission Complete</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="star-field" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="Data Space home">
+			<img class="brand-logo" src="assets/data_space.svg" alt="Data Space">
+			<span>
+				<strong>DATA SPACE</strong>
+				<small>ENSSEA OPEN DAY</small>
+			</span>
+		</a>
+		<div class="status-pill"><span class="status-dot"></span> SHIP SYSTEMS ONLINE</div>
+	</header>
+
+	<main>
+		<section class="screen celebration-screen" aria-labelledby="celebration-title">
+			<div class="celebration-panel">
+				<p class="eyebrow">MISSION COMPLETE</p>
+				<h2 id="celebration-title">All systems are restored</h2>
+				<p class="celebration-score">Final score: <strong id="celebration-score">20</strong> points</p>
+				<a class="primary-button celebration-button" href="index.html">PLAY AGAIN <span aria-hidden="true">→</span></a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer"><span>DATA SPACE / ENSSEA</span><span>OPEN DAY 2026</span><span>STATIC MISSION BUILD</span></footer>
+	<script src="scripts/celebration.js" defer></script>
+</body>
+</html>
