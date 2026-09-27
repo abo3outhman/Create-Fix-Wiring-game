@@ -7,14 +7,11 @@ const nameForm = document.querySelector("#name-form");
 const nameInput = document.querySelector("#player-name");
 const crewName = document.querySelector("#crew-name");
 const startGameButton = document.querySelector("#start-game-button");
-const scoreValue = document.querySelector("#score-value");
-const progressLabel = document.querySelector("#progress-label");
 const questionNumber = document.querySelector("#question-number");
 const questionCategory = document.querySelector("#question-category");
 const questionText = document.querySelector("#question-text");
 const answerOptions = document.querySelector("#answer-options");
 const answerFeedback = document.querySelector("#answer-feedback");
-const nextQuestionButton = document.querySelector("#next-question-button");
 const topicPills = document.querySelectorAll(".topic-pill");
 const wireTopics = document.querySelectorAll(".wire-node[data-category]");
 const wireLines = document.querySelectorAll(".wire-line[data-category]");
@@ -28,10 +25,6 @@ let armedWireCategory = null;
 const destinationColors = ["blue", "pink", "yellow", "orange", "cyan"];
 
 const getQuestionLanguage = () => localStorage.getItem("dataSpaceQuestionLanguage") || "en";
-
-const updateScore = () => {
-	scoreValue.textContent = gameState.score;
-};
 
 const updateTopicState = () => {
 	topicPills.forEach((pill) => {
@@ -67,13 +60,12 @@ const showQuestion = () => {
 	questionNumber.textContent = `Q${String(gameState.questionIndex + 1).padStart(2, "0")}`;
 	questionCategory.textContent = currentQuestion.category.name.en.toUpperCase();
 	questionText.textContent = currentQuestion.question[language];
-	progressLabel.textContent = `${gameState.questionIndex + 1} / ${questionBank.length} QUESTIONS`;
 	answerFeedback.textContent = "";
 	answerFeedback.className = "answer-feedback";
-	nextQuestionButton.classList.add("is-hidden");
 	answerOptions.classList.remove("is-locked");
 	answerOptions.innerHTML = "";
 	armedWireCategory = null;
+	sourceWires.forEach((wire) => wire.classList.remove("is-armed"));
 	updateTopicState();
 
 	currentQuestion.options[language].forEach((option, index) => {
@@ -84,7 +76,14 @@ const showQuestion = () => {
 		answerText.className = "answer-text";
 		answerText.textContent = `${String.fromCharCode(65 + index)}. ${option}`;
 		button.append(answerText);
-		button.addEventListener("click", () => chooseAnswer(index, button));
+		button.addEventListener("click", () => {
+			if (window.matchMedia("(pointer: coarse)").matches && armedWireCategory !== currentQuestion.category.id) {
+				answerFeedback.textContent = "Tap the active wire first, then choose an answer.";
+				answerFeedback.className = "answer-feedback feedback-hint";
+				return;
+			}
+			chooseAnswer(index, button);
+		});
 		button.addEventListener("dragover", (event) => {
 			event.preventDefault();
 			button.classList.add("drop-target");
@@ -110,13 +109,13 @@ const chooseAnswer = (answerIndex, button) => {
 		button.disabled = true;
 		gameState.score = Math.max(0, gameState.score - 1);
 		DataSpaceState.save(gameState);
-		updateScore();
 		answerFeedback.textContent = "Incorrect. Try another answer. -1 point";
 		answerFeedback.className = "answer-feedback feedback-wrong";
 		return;
 	}
 
 	answerOptions.classList.add("is-locked");
+	armedWireCategory = null;
 	button.classList.add("answer-correct");
 	document.querySelectorAll(".answer-option").forEach((option) => { option.disabled = true; });
 	if (!gameState.completed.includes(currentQuestion.category.id)) {
@@ -126,10 +125,17 @@ const chooseAnswer = (answerIndex, button) => {
 	DataSpaceState.save(gameState);
 	window.connectWire(currentQuestion.category.id, answerIndex);
 	updateTopicState();
-	answerFeedback.textContent = "Correct. Wire connected.";
+	answerFeedback.textContent = "Correct! Moving to the next topic…";
 	answerFeedback.className = "answer-feedback feedback-correct";
-	nextQuestionButton.classList.remove("is-hidden");
-	nextQuestionButton.focus();
+	window.setTimeout(() => {
+		gameState.questionIndex += 1;
+		DataSpaceState.save(gameState);
+		if (gameState.questionIndex >= questionBank.length) {
+			window.location.href = `celebration.html?score=${gameState.score}`;
+			return;
+		}
+		showQuestion();
+	}, 750);
 };
 
 const loadQuestions = async () => {
@@ -172,17 +178,7 @@ nameForm.addEventListener("submit", (event) => {
 startGameButton.addEventListener("click", () => {
 	rulesScreen.classList.add("is-hidden");
 	gameScreen.classList.remove("is-hidden");
-	updateScore();
 	loadQuestions();
-});
-
-nextQuestionButton.addEventListener("click", () => {
-	gameState.questionIndex += 1;
-	if (gameState.questionIndex >= questionBank.length) {
-		window.location.href = `celebration.html?score=${gameState.score}`;
-		return;
-	}
-	showQuestion();
 });
 
 sourceWires.forEach((wire) => {
@@ -197,7 +193,14 @@ sourceWires.forEach((wire) => {
 	wire.addEventListener("dragend", () => wire.classList.remove("is-dragging"));
 	wire.addEventListener("click", () => {
 		if (!currentQuestion || wire.dataset.category !== currentQuestion.category.id) return;
-		armedWireCategory = wire.dataset.category;
-		wire.classList.toggle("is-armed", armedWireCategory === wire.dataset.category);
+		armedWireCategory = armedWireCategory === wire.dataset.category ? null : wire.dataset.category;
+		sourceWires.forEach((source) => source.classList.toggle("is-armed", source.dataset.category === armedWireCategory));
+		if (armedWireCategory) {
+			answerFeedback.textContent = "Wire selected. Tap its matching answer.";
+			answerFeedback.className = "answer-feedback feedback-hint";
+		} else {
+			answerFeedback.textContent = "";
+			answerFeedback.className = "answer-feedback";
+		}
 	});
 });

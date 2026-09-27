@@ -71,11 +71,9 @@
 				<p class="eyebrow">MISSION BRIEFING</p>
 				<h1 id="rules-title">Know the rules.<br><span>Then fix the wires.</span></h1>
 				<ul class="rules-list">
-					<li>Every player starts with <strong>20 points</strong>.</li>
-					<li>You will answer <strong>5 questions</strong>, one from each topic.</li>
-					<li>A correct answer on your first try costs <strong>0 points</strong>.</li>
-					<li>Each wrong try costs <strong>1 point</strong> until you find the correct answer.</li>
-					<li>A wrong answer turns <strong class="wrong-answer-text">red</strong> and cannot be chosen again.</li>
+					<li>Answer one question from each of the <strong>5 topics</strong>.</li>
+					<li>A wrong answer costs <strong>1 point</strong> and cannot be chosen again.</li>
+					<li>Correct answers automatically continue to the next topic.</li>
 				</ul>
 				<button class="primary-button rules-start-button" id="start-game-button" type="button">START GAME <span aria-hidden="true">→</span></button>
 			</div>
@@ -88,16 +86,7 @@
 					<h2 id="game-title">Connect the data wires</h2>
 					<p class="mission-copy">Answer the question to route each wire to its matching symbol.</p>
 				</div>
-				<div class="game-readouts">
-					<div class="score-readout"><span>SCORE</span><strong id="score-value">20</strong><small>POINTS</small></div>
-					<div class="crew-readout"><span>CREW</span><strong id="crew-name">PLAYER</strong></div>
-				</div>
-			</div>
-
-			<div class="game-meta" role="group" aria-label="Mission progress">
-				<span>PROGRESS</span>
-				<div class="progress-track"><span class="progress-quarter"></span></div>
-				<strong id="progress-label">1 / 5 QUESTIONS</strong>
+				<div class="crew-readout"><span>CREW</span><strong id="crew-name">PLAYER</strong></div>
 			</div>
 
 			<ul class="topic-strip" id="topic-strip" aria-label="Topic list">
@@ -136,10 +125,9 @@
 				<div class="question-card" id="question-card">
 					<div class="question-heading"><span class="question-number" id="question-number">Q01</span><span class="question-category" id="question-category">LOADING</span></div>
 					<h3 id="question-text">Loading your first question...</h3>
-					<button class="secondary-button next-button is-hidden" id="next-question-button" type="button">NEXT QUESTION <span aria-hidden="true">→</span></button>
+					<p class="answer-feedback" id="answer-feedback" role="status"></p>
 				</div>
 				<div class="answer-options" id="answer-options"></div>
-				<p class="answer-feedback" id="answer-feedback" role="status"></p>
 			</section>
 		</section>
 

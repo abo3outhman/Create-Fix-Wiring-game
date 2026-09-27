@@ -121,23 +121,23 @@ h2 { font-size: clamp(1.6rem, 4vw, 3rem); }
 .score-readout small { display: inline-block; margin-left: 4px; font-size: 8px; }
 .crew-readout span { display: block; margin-bottom: 8px; color: var(--muted); }
 .crew-readout strong { color: var(--yellow); overflow-wrap: anywhere; }
-.game-meta { display: flex; align-items: center; gap: 17px; margin: 48px 0 18px; color: var(--muted); font: 10px Orbitron, sans-serif; letter-spacing: .08em; }
-.progress-track { width: 130px; height: 4px; background: #26363b; }
-.progress-track span { display: block; height: 100%; background: var(--cyan); }
-.progress-quarter { width: 25%; }
-.game-meta strong { color: var(--ink); }
-
 .topic-strip {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
+	width: 100%;
+	overflow-x: auto;
+	overscroll-behavior-inline: contain;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
 	padding: 0;
 	list-style: none;
 	gap: 10px;
 	margin: 0 auto 18px;
 }
+.topic-strip::-webkit-scrollbar { display: none; }
 
 .topic-pill {
 	display: inline-flex;
@@ -198,12 +198,18 @@ h2 { font-size: clamp(1.6rem, 4vw, 3rem); }
 .wire-name { color: #c5d0d2; font: 11px Orbitron, sans-serif; letter-spacing: .06em; }.node-blue { color: var(--blue); }.node-yellow { color: var(--yellow); }.node-orange { color: var(--orange); }.node-pink { color: var(--pink); }.node-cyan { color: var(--cyan); }
 .topic-strip {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
+	width: 100%;
+	overflow-x: auto;
+	overscroll-behavior-inline: contain;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
 	gap: 10px;
 	margin: 0 auto 18px;
 }
+.topic-strip::-webkit-scrollbar { display: none; }
 
 .topic-pill {
 	display: inline-flex;
@@ -288,7 +294,9 @@ h2 { font-size: clamp(1.6rem, 4vw, 3rem); }
 .answer-option:hover:not(:disabled) { border-color: var(--line); background: rgba(255,255,255,.04); transform: translateY(-2px); }
 .answer-option:disabled { cursor: default; }.answer-option.answer-wrong { border-color: var(--red); color: var(--red); background: rgba(255,104,95,.12); text-decoration: line-through; }.answer-option.answer-correct { border-color: var(--cyan); color: var(--cyan); background: rgba(105,224,220,.1); }
 .answer-feedback { position: absolute; left: 50%; bottom: 18px; width: max-content; min-height: 0; margin: 0; padding: 0; border: 0; background: transparent; transform: translateX(-50%); visibility: hidden; color: var(--red); font-size: 12px; text-align: center; }.feedback-wrong, .feedback-correct { visibility: visible; }.feedback-wrong { color: var(--red); }.feedback-correct { color: var(--cyan); }
-.secondary-button { padding: 14px 17px; color: var(--ink); background: #1e343d; }.next-button { display: block; margin: 14px auto 0; }.is-hidden { display: none; }
+.feedback-correct { color: #8de6a9; font-size: 11px; }
+.feedback-hint { color: var(--muted); font-size: 11px; }
+.is-hidden { display: none; }
 
 .celebration-screen {
 	position: relative;
@@ -382,15 +390,38 @@ h2 { font-size: clamp(1.6rem, 4vw, 3rem); }
 
 .site-footer { display: flex; justify-content: space-between; padding: 20px 0 28px; border-top: 1px solid var(--line); font-size: 9px; }
 
-@media (max-width: 700px) {
+@media (max-width: 960px) {
 	.site-header, .site-footer, .screen { width: min(100% - 32px, 1180px); }
 	.site-header { padding: 20px 0; }.status-pill { display: none; }
 	.language-screen, .welcome-screen, .rules-screen { min-height: 640px; padding: 70px 0; }.crew-silhouette { right: 8%; top: 470px; transform: scale(.7) rotate(8deg); }.orbit-one { right: -300px; top: 390px; }.orbit-two { right: -250px; top: 415px; }
 	.language-copy, .welcome-copy { width: 100%; }.language-console, .name-console { width: 100%; margin-top: 30px; padding: 20px; }.language-options { gap: 7px; }.language-option { min-height: 78px; }.language-option strong { font-size: 14px; }.language-option span { font-size: 10px; }
-	.rules-panel { padding: 25px 20px; }.rules-list { font-size: 13px; }.game-screen { padding-top: 55px; }.game-heading { align-items: center; flex-direction: column; }.game-readouts { width: 100%; justify-content: center; }.score-readout, .crew-readout { flex: 1; border-left: 0; border-top: 1px solid var(--line); padding: 13px 0 0; }.game-meta { flex-wrap: wrap; justify-content: center; margin-top: 32px; }
-	.wiring-board { min-height: 650px; }.wiring-board::before, .wiring-board::after { width: 31%; }.wire-column { top: 72px; height: 345px; }.left-wires { left: 8px; }.right-wires { right: 8px; }.wire-node { min-width: 105px; padding: 7px 4px; gap: 7px; }.right-wires .wire-node { min-width: 52px; }.symbol { width: 31px; height: 31px; font-size: 17px; }.wire-name { font-size: 7px; }.wire-line { left: 22%; right: 22%; }.wire-yellow { top: 105px; }.wire-blue { top: 172px; }.wire-orange { top: 239px; }.wire-pink { top: 306px; }.wire-cyan { top: 373px; }.panel-label { top: 20px; font-size: 8px; }.left-label { left: 14px; }.right-label { right: 14px; }
-	.topic-strip { gap: 6px; }
-	.topic-pill { padding: 6px 8px; font-size: 8px; }
-	.question-card { left: 50%; top: 58px; width: 84%; min-height: 210px; padding: 42px 15px 34px; transform: translateX(-50%); }.question-card h3 { max-width: none; margin: 20px 0 16px; }.answer-options { position: absolute; left: 0; right: 0; top: 285px; bottom: auto; width: 100%; padding: 16px 15px; }.answer-feedback { bottom: 12px; width: max-content; }.site-footer { gap: 10px; flex-wrap: wrap; }
+	.rules-panel { width: 100%; padding: 25px 20px; }.rules-list { gap: 10px; margin-top: 22px; font-size: 13px; }.game-screen { padding: 42px 0 58px; }.game-heading { align-items: center; flex-direction: column; gap: 12px; }.game-readouts { width: 100%; justify-content: center; }.crew-readout { display: none; }.mission-copy { max-width: 92%; margin: 9px auto 0; font-size: 13px; line-height: 1.45; }
+	.topic-strip { gap: 6px; margin-bottom: 9px; }
+	.topic-pill { flex: 0 0 auto; max-width: 82%; padding: 6px 8px; font-size: 8px; white-space: nowrap; }
+	.wiring-board { display: grid; grid-template-columns: 29% minmax(0, 1fr); grid-template-rows: auto auto auto auto; align-items: start; min-height: 0; padding: 3% 3%; gap: 7px 2%; overflow: hidden; }
+	.wiring-board::before, .wiring-board::after { display: none; }
+	.panel-label { position: relative; top: auto; right: auto; left: auto; font-size: 8px; text-align: left; }
+	.left-label { grid-column: 1; grid-row: 1; }.right-label { grid-column: 2; grid-row: 1; }
+	.wire-lines { display: block; }
+	.wire-column.left-wires { position: relative; top: auto; left: auto; grid-column: 1; grid-row: 3; display: grid; grid-template-rows: repeat(5, 44px); gap: 6px; width: 100%; height: auto; justify-content: stretch; }
+	.left-wires .wire-node { width: 100%; min-width: 0; min-height: 44px; padding: 4px 2px; justify-content: center; text-align: center; }
+	.left-wires .wire-node:not(.is-active):not(.is-solved) { visibility: hidden; }
+	.left-wires .wire-node.is-active { cursor: pointer; border-color: rgba(244, 212, 71, .65); background: rgba(244, 212, 71, .08); }
+	.wire-column.right-wires { display: none; }
+	.question-card { position: relative; top: auto; right: auto; bottom: auto; left: auto; grid-column: 1 / -1; grid-row: 2; width: 100%; min-height: 0; padding: 3.5% 4%; transform: none; border: 1px solid var(--line); background: rgba(9, 20, 28, .78); }
+	.question-card h3 { max-width: 100%; margin: 12px auto 0; font-size: clamp(.95rem, 4.2vw, 1.15rem); }
+	.answer-options { position: relative; top: auto; right: auto; bottom: auto; left: auto; grid-column: 2; grid-row: 3; width: 100%; padding: 0; grid-auto-rows: 44px; row-gap: 6px; }
+	.answer-option { min-height: 44px; padding: 7px 4%; font-size: 11px; overflow-wrap: anywhere; }
+	.answer-feedback { position: static; grid-column: 1 / -1; grid-row: 4; width: 100%; max-width: 100%; margin: 2px 0 0; transform: none; font-size: 11px; white-space: normal; }
+	.site-footer { gap: 10px; flex-wrap: wrap; }
 	.celebration-panel { padding: 30px 18px; }
+}
+
+@media (max-width: 420px) {
+	.site-header, .site-footer, .screen { width: 92%; }
+	.game-screen { padding-top: 32px; }
+	.wiring-board { padding: 3%; }
+	.question-card { padding: 4% 4%; }
+	.wire-column.left-wires { grid-template-rows: repeat(5, 44px); }
+	.answer-option { padding-inline: 4%; font-size: 10px; }
 }
