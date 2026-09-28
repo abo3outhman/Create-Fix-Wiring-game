@@ -7,11 +7,20 @@
 	<title>Data Space | Wiring Challenge</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Orbitron:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css?v=branch-board-11">
 </head>
 <body>
-	<div class="star-field" aria-hidden="true"></div>
+	<div class="cosmos" aria-hidden="true">
+		<div class="stars stars-small"></div>
+		<div class="stars stars-bright"></div>
+		<div class="planet planet-teal"><span class="crater crater-a"></span><span class="crater crater-b"></span><span class="crater crater-c"></span><span class="crater crater-d"></span></div>
+		<div class="planet planet-amber"><span class="crater crater-a"></span><span class="crater crater-b"></span><span class="crater crater-c"></span></div>
+		<div class="planet planet-blue"></div>
+		<div class="asteroid asteroid-one"></div>
+		<div class="asteroid asteroid-two"></div>
+		<div class="asteroid asteroid-three"></div>
+	</div>
 
 	<header class="site-header">
 		<a class="brand" href="#top" aria-label="Data Space home">
@@ -84,46 +93,24 @@
 				<div>
 					<p class="eyebrow">TASK / ELECTRICAL</p>
 					<h2 id="game-title">Connect the data wires</h2>
-					<p class="mission-copy">Answer the question to route each wire to its matching symbol.</p>
+					<p class="mission-copy">Complete the circuit by choosing the correct answer.</p>
 				</div>
 				<div class="crew-readout"><span>CREW</span><strong id="crew-name">PLAYER</strong></div>
 			</div>
 
 			<ul class="topic-strip" id="topic-strip" aria-label="Topic list">
-				<li class="topic-pill is-visible is-active" data-category="descriptive_statistics">Descriptive Statistics</li>
-				<li class="topic-pill" data-category="probability">Probability</li>
-				<li class="topic-pill" data-category="microeconomics">Economics</li>
-				<li class="topic-pill" data-category="ai_data_science">AI &amp; Data</li>
-				<li class="topic-pill" data-category="general_knowledge">General Knowledge</li>
+				<li class="topic-pill is-visible is-active" data-category="python">Python</li>
+				<li class="topic-pill" data-category="r">R</li>
+				<li class="topic-pill" data-category="machine_learning">Machine Learning</li>
+				<li class="topic-pill" data-category="deep_learning">Deep Learning</li>
+				<li class="topic-pill" data-category="data_analytics">Data Analytics</li>
 			</ul>
 
 			<section class="wiring-board" aria-label="Wiring board">
-				<div class="panel-label left-label">SIGNALS <span>INPUT</span></div>
-				<div class="panel-label right-label">DESTINATIONS <span>OUTPUT</span></div>
-				<div class="wire-lines" aria-hidden="true">
-					<span class="wire-line wire-yellow" data-category="descriptive_statistics"></span>
-					<span class="wire-line wire-blue" data-category="probability"></span>
-					<span class="wire-line wire-orange" data-category="microeconomics"></span>
-					<span class="wire-line wire-pink" data-category="ai_data_science"></span>
-					<span class="wire-line wire-cyan" data-category="general_knowledge"></span>
-				</div>
-				<div class="wire-column left-wires">
-					<button class="wire-node node-yellow" data-category="descriptive_statistics" type="button" aria-label="Yellow statistics wire"><span class="symbol">○</span><span class="wire-name">Statistics</span></button>
-					<button class="wire-node node-blue" data-category="probability" type="button" aria-label="Blue probability wire"><span class="symbol">×</span><span class="wire-name">Probability</span></button>
-					<button class="wire-node node-orange" data-category="microeconomics" type="button" aria-label="Orange economics wire"><span class="symbol">△</span><span class="wire-name">Economics</span></button>
-					<button class="wire-node node-pink" data-category="ai_data_science" type="button" aria-label="Pink AI and data wire"><span class="symbol">★</span><span class="wire-name">AI &amp; Data</span></button>
-					<button class="wire-node node-cyan" data-category="general_knowledge" type="button" aria-label="Cyan general knowledge wire"><span class="symbol">◇</span><span class="wire-name">General Knowledge</span></button>
-				</div>
-				<div class="wire-column right-wires">
-					<button class="wire-node node-blue" type="button" aria-label="Blue cross destination"><span class="symbol">×</span></button>
-					<button class="wire-node node-pink" type="button" aria-label="Pink star destination"><span class="symbol">★</span></button>
-					<button class="wire-node node-yellow" type="button" aria-label="Yellow circle destination"><span class="symbol">○</span></button>
-					<button class="wire-node node-orange" type="button" aria-label="Orange triangle destination"><span class="symbol">△</span></button>
-					<button class="wire-node node-cyan" type="button" aria-label="Cyan diamond destination"><span class="symbol">◇</span></button>
-				</div>
+				<svg class="wire-canvas" id="wire-canvas" aria-hidden="true" focusable="false"></svg>
 
 				<div class="question-card" id="question-card">
-					<div class="question-heading"><span class="question-number" id="question-number">Q01</span><span class="question-category" id="question-category">LOADING</span></div>
+					<div class="question-heading"><span class="question-number" id="question-number">Q01</span></div>
 					<h3 id="question-text">Loading your first question...</h3>
 					<p class="answer-feedback" id="answer-feedback" role="status"></p>
 				</div>
@@ -135,7 +122,7 @@
 
 	<footer class="site-footer"><span>DATA SPACE / ENSSEA</span><span>OPEN DAY 2026</span><span>STATIC MISSION BUILD</span></footer>
 	<script src="scripts/state.js" defer></script>
-	<script src="scripts/wireAnimation.js" defer></script>
-	<script src="scripts/main.js" defer></script>
+	<script src="scripts/wireAnimation.js?v=branch-board-11" defer></script>
+	<script src="scripts/main.js?v=branch-board-11" defer></script>
 </body>
 </html>

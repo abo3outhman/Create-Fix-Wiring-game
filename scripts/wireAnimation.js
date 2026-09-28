@@ -1,37 +1,75 @@
 (function () {
-	const positionWire = function (categoryId, answerIndex) {
-		const line = document.querySelector(`.wire-line[data-category="${categoryId}"]`);
-		const sourceSymbol = document.querySelector(`.left-wires .wire-node[data-category="${categoryId}"]`);
-		const target = document.querySelector(`#answer-options .answer-option:nth-child(${Number(answerIndex) + 1})`);
+	const svgNamespace = "http://www.w3.org/2000/svg";
+	const canvas = document.querySelector("#wire-canvas");
+	const connectedAnswers = new Set();
+	let connectionAnimationRunning = false;
+
+	const drawQuestionWires = function (newQuestion = false) {
 		const board = document.querySelector(".wiring-board");
-		if (!line || !sourceSymbol || !target || !board) return;
+		const question = document.querySelector("#question-card");
+		const answers = [...document.querySelectorAll("#answer-options .answer-option")];
+		if (!canvas || !board || !question || !answers.length) return;
+		if (newQuestion) {
+			connectedAnswers.clear();
+			connectionAnimationRunning = false;
+		}
+		canvas.replaceChildren();
 		const boardRect = board.getBoundingClientRect();
-		const sourceRect = sourceSymbol.getBoundingClientRect();
-		const targetRect = target.getBoundingClientRect();
-		const startX = sourceRect.left + sourceRect.width / 2 - boardRect.left;
-		const startY = sourceRect.top + sourceRect.height / 2 - boardRect.top;
-		const endX = targetRect.left + targetRect.width / 2 - boardRect.left;
-		const endY = targetRect.top + targetRect.height / 2 - boardRect.top;
-		const length = Math.hypot(endX - startX, endY - startY);
-		const angle = Math.atan2(endY - startY, endX - startX) * 180 / Math.PI;
-		line.dataset.answerIndex = answerIndex;
-		line.style.left = `${startX}px`;
-		line.style.right = "auto";
-		line.style.top = `${startY}px`;
-		line.style.width = `${length}px`;
-		line.style.transform = `rotate(${angle}deg)`;
-		line.classList.add("wire-connected");
-	};
+		canvas.setAttribute("viewBox", `0 0 ${boardRect.width} ${boardRect.height}`);
+		canvas.setAttribute("preserveAspectRatio", "none");
+		const questionRect = question.getBoundingClientRect();
+		const startX = questionRect.left + questionRect.width / 2 - boardRect.left;
+		const startY = questionRect.bottom - boardRect.top;
+		const isStacked = boardRect.width <= 960;
 
-	window.connectWire = function (categoryId, answerIndex) {
-		const source = document.querySelector(`.left-wires .wire-node[data-category="${categoryId}"]`);
-		if (source) source.classList.add("is-solved");
-		positionWire(categoryId, answerIndex);
-	};
-
-	window.addEventListener("resize", () => {
-		document.querySelectorAll(".wire-line[data-answer-index]").forEach((line) => {
-			positionWire(line.dataset.category, line.dataset.answerIndex);
+		answers.forEach((answer, index) => {
+			const answerRect = answer.getBoundingClientRect();
+			const endX = isStacked
+				? answerRect.left - boardRect.left - 9
+				: answerRect.left + answerRect.width / 2 - boardRect.left;
+			const endY = isStacked
+				? answerRect.top + answerRect.height / 2 - boardRect.top
+				: answerRect.top - boardRect.top - 2;
+			const curve = Math.max(24, Math.abs(endY - startY) * .42);
+			const fan = (index - (answers.length - 1) / 2) * Math.min(16, boardRect.width * .045);
+			const path = document.createElementNS(svgNamespace, "path");
+			path.classList.add("branch-wire", `branch-${["blue", "pink", "yellow", "orange", "cyan"][index]}`);
+			path.dataset.answerIndex = index;
+			const controlOne = isStacked ? `${startX + fan} ${startY + curve}` : `${startX} ${startY + curve}`;
+			const controlTwo = isStacked ? `${endX - 18} ${endY - curve * .35}` : `${endX} ${endY - curve}`;
+			path.setAttribute("d", `M ${startX} ${startY} C ${controlOne}, ${controlTwo}, ${endX} ${endY}`);
+			canvas.append(path);
+			const pathLength = path.getTotalLength();
+			path.dataset.pathLength = pathLength;
+			path.style.setProperty("--wire-length", pathLength);
+			path.style.strokeDasharray = `${pathLength}`;
+			if (connectedAnswers.has(index)) {
+				path.classList.add("is-connected");
+				path.classList.add("is-settled");
+				path.style.strokeDashoffset = "0";
+			} else {
+				path.style.strokeDashoffset = `${pathLength}`;
+			}
 		});
+	};
+
+	window.drawQuestionWires = drawQuestionWires;
+	window.setQuestionWireState = function (answerIndex, state) {
+		const branch = canvas?.querySelector(`.branch-wire[data-answer-index="${answerIndex}"]`);
+		if (state !== "connected" || !branch || connectedAnswers.has(Number(answerIndex))) return;
+		connectedAnswers.add(Number(answerIndex));
+		connectionAnimationRunning = true;
+		branch.classList.add("is-connected");
+		branch.addEventListener("animationend", () => {
+			branch.style.strokeDashoffset = "0";
+			branch.classList.add("is-settled");
+			connectionAnimationRunning = false;
+		}, { once: true });
+	};
+
+	const observer = new ResizeObserver(() => {
+		if (!connectionAnimationRunning) drawQuestionWires();
 	});
+	const board = document.querySelector(".wiring-board");
+	if (board) observer.observe(board);
 })();
