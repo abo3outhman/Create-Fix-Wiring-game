@@ -1,0 +1,854 @@
+{
+  "categories": [
+    {
+      "id": "python",
+      "name": {
+        "en": "Python",
+        "ar": "بايثون",
+        "fr": "Python"
+      },
+      "questions": [
+        {
+          "id": "epy01",
+          "question": {
+            "en": "Which symbol starts a comment in Python?",
+            "ar": "ما الرمز الذي يبدأ تعليقًا في بايثون؟",
+            "fr": "Quel symbole commence un commentaire en Python ?"
+          },
+          "options": {
+            "en": [
+              "#",
+              "//",
+              "<!--",
+              "**",
+              "%"
+            ],
+            "ar": [
+              "#",
+              "//",
+              "<!--",
+              "**",
+              "%"
+            ],
+            "fr": [
+              "#",
+              "//",
+              "<!--",
+              "**",
+              "%"
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "epy02",
+          "question": {
+            "en": "What is the value of `len([\"red\", \"blue\"])`?",
+            "ar": "ما قيمة `len([\"red\", \"blue\"])`؟",
+            "fr": "Quelle est la valeur de `len([\"red\", \"blue\"])` ?"
+          },
+          "options": {
+            "en": [
+              "1",
+              "3",
+              "2",
+              "0",
+              "An error"
+            ],
+            "ar": [
+              "1",
+              "3",
+              "2",
+              "0",
+              "خطأ"
+            ],
+            "fr": [
+              "1",
+              "3",
+              "2",
+              "0",
+              "Une erreur"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "epy03",
+          "question": {
+            "en": "Which value is a string?",
+            "ar": "أي قيمة مما يلي نص؟",
+            "fr": "Laquelle de ces valeurs est une chaîne de caractères ?"
+          },
+          "options": {
+            "en": [
+              "42",
+              "True",
+              "3.5",
+              "None",
+              "\"hello\""
+            ],
+            "ar": [
+              "42",
+              "True",
+              "3.5",
+              "None",
+              "\"hello\""
+            ],
+            "fr": [
+              "42",
+              "True",
+              "3.5",
+              "None",
+              "\"hello\""
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "epy04",
+          "question": {
+            "en": "Which keyword defines a function in Python?",
+            "ar": "أي كلمة محجوزة تُستخدم لتعريف دالة في بايثون؟",
+            "fr": "Quel mot-clé sert à définir une fonction en Python ?"
+          },
+          "options": {
+            "en": [
+              "make",
+              "def",
+              "function",
+              "fun",
+              "return"
+            ],
+            "ar": [
+              "make",
+              "def",
+              "function",
+              "fun",
+              "return"
+            ],
+            "fr": [
+              "make",
+              "def",
+              "function",
+              "fun",
+              "return"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "epy05",
+          "question": {
+            "en": "What values does `range(3)` produce in a loop?",
+            "ar": "ما القيم التي ينتجها `range(3)` داخل حلقة؟",
+            "fr": "Quelles valeurs `range(3)` produit-il dans une boucle ?"
+          },
+          "options": {
+            "en": [
+              "1, 2, 3",
+              "0, 1, 2, 3",
+              "3 only",
+              "0, 1, 2",
+              "2, 3, 4"
+            ],
+            "ar": [
+              "1، 2، 3",
+              "0، 1، 2، 3",
+              "3 فقط",
+              "0، 1، 2",
+              "2، 3، 4"
+            ],
+            "fr": [
+              "1, 2, 3",
+              "0, 1, 2, 3",
+              "3 uniquement",
+              "0, 1, 2",
+              "2, 3, 4"
+            ]
+          },
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "id": "r",
+      "name": {
+        "en": "R",
+        "ar": "R",
+        "fr": "R"
+      },
+      "questions": [
+        {
+          "id": "er01",
+          "question": {
+            "en": "Which operator assigns a value in base R?",
+            "ar": "أي عامل يُستخدم لإسناد قيمة في R الأساسية؟",
+            "fr": "Quel opérateur sert à affecter une valeur en R de base ?"
+          },
+          "options": {
+            "en": [
+              "==",
+              "<-",
+              "%>%",
+              "!=",
+              "~"
+            ],
+            "ar": [
+              "==",
+              "<-",
+              "%>%",
+              "!=",
+              "~"
+            ],
+            "fr": [
+              "==",
+              "<-",
+              "%>%",
+              "!=",
+              "~"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "er02",
+          "question": {
+            "en": "What does `c(2, 4, 6)` create in R?",
+            "ar": "ماذا تنشئ `c(2, 4, 6)` في R؟",
+            "fr": "Que crée `c(2, 4, 6)` en R ?"
+          },
+          "options": {
+            "en": [
+              "A data frame",
+              "A function",
+              "A plot",
+              "A vector",
+              "A file"
+            ],
+            "ar": [
+              "إطار بيانات",
+              "دالة",
+              "رسمًا بيانيًا",
+              "متجهًا",
+              "ملفًا"
+            ],
+            "fr": [
+              "Un tableau de données",
+              "Une fonction",
+              "Un graphique",
+              "Un vecteur",
+              "Un fichier"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "er03",
+          "question": {
+            "en": "Which function shows the first rows of a data frame `df`?",
+            "ar": "أي دالة تعرض الصفوف الأولى من إطار البيانات `df`؟",
+            "fr": "Quelle fonction affiche les premières lignes du tableau `df` ?"
+          },
+          "options": {
+            "en": [
+              "head(df)",
+              "tail(df)",
+              "plot(df)",
+              "sum(df)",
+              "str(df)"
+            ],
+            "ar": [
+              "head(df)",
+              "tail(df)",
+              "plot(df)",
+              "sum(df)",
+              "str(df)"
+            ],
+            "fr": [
+              "head(df)",
+              "tail(df)",
+              "plot(df)",
+              "sum(df)",
+              "str(df)"
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "er04",
+          "question": {
+            "en": "What does `length(x)` return for a vector in R?",
+            "ar": "ماذا تُرجع `length(x)` لمتجه في R؟",
+            "fr": "Que renvoie `length(x)` pour un vecteur en R ?"
+          },
+          "options": {
+            "en": [
+              "Number of columns",
+              "The largest value",
+              "The average",
+              "The data type",
+              "Number of elements"
+            ],
+            "ar": [
+              "عدد الأعمدة",
+              "أكبر قيمة",
+              "المتوسط",
+              "نوع البيانات",
+              "عدد العناصر"
+            ],
+            "fr": [
+              "Le nombre de colonnes",
+              "La valeur maximale",
+              "La moyenne",
+              "Le type de données",
+              "Le nombre d’éléments"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "er05",
+          "question": {
+            "en": "Which function calculates the average of numeric values in R?",
+            "ar": "أي دالة تحسب متوسط القيم العددية في R؟",
+            "fr": "Quelle fonction calcule la moyenne de valeurs numériques en R ?"
+          },
+          "options": {
+            "en": [
+              "count(x)",
+              "sort(x)",
+              "mean(x)",
+              "names(x)",
+              "unique(x)"
+            ],
+            "ar": [
+              "count(x)",
+              "sort(x)",
+              "mean(x)",
+              "names(x)",
+              "unique(x)"
+            ],
+            "fr": [
+              "count(x)",
+              "sort(x)",
+              "mean(x)",
+              "names(x)",
+              "unique(x)"
+            ]
+          },
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "machine_learning",
+      "name": {
+        "en": "Machine Learning",
+        "ar": "التعلم الآلي",
+        "fr": "Apprentissage automatique"
+      },
+      "questions": [
+        {
+          "id": "eml01",
+          "question": {
+            "en": "In supervised learning, what does a training example usually include?",
+            "ar": "ماذا تتضمن عينة التدريب عادةً في التعلم الخاضع للإشراف؟",
+            "fr": "Que contient généralement un exemple d’entraînement en apprentissage supervisé ?"
+          },
+          "options": {
+            "en": [
+              "Inputs and a known target",
+              "Only a random number",
+              "A model prediction only",
+              "A graph title",
+              "No data"
+            ],
+            "ar": [
+              "مدخلات وهدفًا معروفًا",
+              "عددًا عشوائيًا فقط",
+              "تنبؤ النموذج فقط",
+              "عنوان رسم بياني",
+              "لا بيانات"
+            ],
+            "fr": [
+              "Des entrées et une cible connue",
+              "Un nombre aléatoire uniquement",
+              "Une prédiction du modèle uniquement",
+              "Un titre de graphique",
+              "Aucune donnée"
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "eml02",
+          "question": {
+            "en": "Which task is classification?",
+            "ar": "أي مهمة مما يلي تُعد تصنيفًا؟",
+            "fr": "Laquelle de ces tâches est une classification ?"
+          },
+          "options": {
+            "en": [
+              "Predicting a house price",
+              "Grouping customers without labels",
+              "Deciding if an email is spam",
+              "Estimating tomorrow’s temperature",
+              "Compressing an image"
+            ],
+            "ar": [
+              "التنبؤ بسعر منزل",
+              "تجميع العملاء دون تسميات",
+              "تحديد ما إذا كان البريد مزعجًا",
+              "تقدير درجة حرارة الغد",
+              "ضغط صورة"
+            ],
+            "fr": [
+              "Prédire le prix d’une maison",
+              "Regrouper des clients sans étiquettes",
+              "Déterminer si un courriel est indésirable",
+              "Estimer la température de demain",
+              "Compresser une image"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "eml03",
+          "question": {
+            "en": "Why is a dataset split into training and test sets?",
+            "ar": "لماذا تُقسّم مجموعة البيانات إلى تدريب واختبار؟",
+            "fr": "Pourquoi divise-t-on les données en ensembles d’entraînement et de test ?"
+          },
+          "options": {
+            "en": [
+              "To make the dataset larger",
+              "To remove every feature",
+              "To guarantee perfect accuracy",
+              "To sort the labels",
+              "To evaluate on examples not used for fitting"
+            ],
+            "ar": [
+              "لزيادة حجم البيانات",
+              "لحذف جميع السمات",
+              "لضمان دقة كاملة",
+              "لترتيب التسميات",
+              "للتقييم على أمثلة لم تُستخدم في التدريب"
+            ],
+            "fr": [
+              "Pour agrandir le jeu de données",
+              "Pour supprimer toutes les variables",
+              "Pour garantir une précision parfaite",
+              "Pour trier les étiquettes",
+              "Pour évaluer sur des exemples non utilisés pour l’ajustement"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "eml04",
+          "question": {
+            "en": "What is a feature in a machine-learning dataset?",
+            "ar": "ما المقصود بالسمة في مجموعة بيانات للتعلم الآلي؟",
+            "fr": "Qu’est-ce qu’une variable dans un jeu de données d’apprentissage automatique ?"
+          },
+          "options": {
+            "en": [
+              "The final score only",
+              "An input variable describing an example",
+              "A type of computer",
+              "A missing row",
+              "The training date"
+            ],
+            "ar": [
+              "النتيجة النهائية فقط",
+              "متغير إدخال يصف عينة",
+              "نوع من الحواسيب",
+              "صف مفقود",
+              "تاريخ التدريب"
+            ],
+            "fr": [
+              "Le score final uniquement",
+              "Une variable d’entrée décrivant un exemple",
+              "Un type d’ordinateur",
+              "Une ligne manquante",
+              "La date d’entraînement"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "eml05",
+          "question": {
+            "en": "Which method learns from data without target labels?",
+            "ar": "أي أسلوب يتعلم من البيانات دون تسميات مستهدفة؟",
+            "fr": "Quelle méthode apprend à partir de données sans étiquettes cibles ?"
+          },
+          "options": {
+            "en": [
+              "Supervised learning",
+              "Manual sorting",
+              "Rule lookup",
+              "Unsupervised learning",
+              "Data entry"
+            ],
+            "ar": [
+              "التعلم الخاضع للإشراف",
+              "الترتيب اليدوي",
+              "البحث عن قاعدة",
+              "التعلم غير الخاضع للإشراف",
+              "إدخال البيانات"
+            ],
+            "fr": [
+              "L’apprentissage supervisé",
+              "Le tri manuel",
+              "La recherche de règles",
+              "L’apprentissage non supervisé",
+              "La saisie de données"
+            ]
+          },
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "id": "deep_learning",
+      "name": {
+        "en": "Deep Learning",
+        "ar": "التعلم العميق",
+        "fr": "Apprentissage profond"
+      },
+      "questions": [
+        {
+          "id": "edl01",
+          "question": {
+            "en": "What is an artificial neuron loosely inspired by?",
+            "ar": "بماذا تستوحي الخلية العصبية الاصطناعية فكرتها بصورة مبسطة؟",
+            "fr": "De quoi le neurone artificiel s’inspire-t-il de façon simplifiée ?"
+          },
+          "options": {
+            "en": [
+              "A database table",
+              "A biological neuron",
+              "A web browser",
+              "A printer",
+              "A sorting list"
+            ],
+            "ar": [
+              "جدول قاعدة بيانات",
+              "خلية عصبية بيولوجية",
+              "متصفح ويب",
+              "طابعة",
+              "قائمة مرتبة"
+            ],
+            "fr": [
+              "Une table de base de données",
+              "Un neurone biologique",
+              "Un navigateur web",
+              "Une imprimante",
+              "Une liste triée"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "edl02",
+          "question": {
+            "en": "What is a layer in a neural network?",
+            "ar": "ما الطبقة في الشبكة العصبية؟",
+            "fr": "Qu’est-ce qu’une couche dans un réseau neuronal ?"
+          },
+          "options": {
+            "en": [
+              "A file on disk",
+              "A set of labels",
+              "A data-cleaning rule",
+              "A group of processing units at one stage",
+              "A network cable"
+            ],
+            "ar": [
+              "ملف على القرص",
+              "مجموعة تسميات",
+              "قاعدة لتنظيف البيانات",
+              "مجموعة وحدات معالجة في مرحلة واحدة",
+              "كابل شبكة"
+            ],
+            "fr": [
+              "Un fichier sur le disque",
+              "Un ensemble d’étiquettes",
+              "Une règle de nettoyage",
+              "Un groupe d’unités de calcul à une étape",
+              "Un câble réseau"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "edl03",
+          "question": {
+            "en": "What does an activation function help a neural network do?",
+            "ar": "بماذا تساعد دالة التنشيط الشبكة العصبية؟",
+            "fr": "À quoi aide une fonction d’activation dans un réseau neuronal ?"
+          },
+          "options": {
+            "en": [
+              "Learn non-linear patterns",
+              "Store images permanently",
+              "Choose the dataset language",
+              "Create labels automatically",
+              "Stop all weight updates"
+            ],
+            "ar": [
+              "تعلم الأنماط غير الخطية",
+              "تخزين الصور بشكل دائم",
+              "اختيار لغة مجموعة البيانات",
+              "إنشاء التسميات تلقائيًا",
+              "إيقاف تحديث الأوزان"
+            ],
+            "fr": [
+              "Apprendre des motifs non linéaires",
+              "Stocker les images définitivement",
+              "Choisir la langue des données",
+              "Créer automatiquement les étiquettes",
+              "Arrêter toutes les mises à jour des poids"
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "edl04",
+          "question": {
+            "en": "During training, what is an epoch?",
+            "ar": "ما المقصود بالدورة التدريبية (epoch) أثناء التدريب؟",
+            "fr": "Qu’est-ce qu’une époque pendant l’entraînement ?"
+          },
+          "options": {
+            "en": [
+              "One input feature",
+              "A single neuron",
+              "The test accuracy",
+              "A model file",
+              "One pass through the training dataset"
+            ],
+            "ar": [
+              "سمة إدخال واحدة",
+              "خلية عصبية واحدة",
+              "دقة الاختبار",
+              "ملف النموذج",
+              "مرور واحد على مجموعة التدريب كاملة"
+            ],
+            "fr": [
+              "Une variable d’entrée",
+              "Un neurone unique",
+              "La précision du test",
+              "Un fichier modèle",
+              "Un passage complet sur les données d’entraînement"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "edl05",
+          "question": {
+            "en": "What do weights control in a neural network?",
+            "ar": "ما الذي تتحكم فيه الأوزان في الشبكة العصبية؟",
+            "fr": "Que contrôlent les poids dans un réseau neuronal ?"
+          },
+          "options": {
+            "en": [
+              "The screen brightness",
+              "The dataset filename",
+              "The strength of connections",
+              "The number of labels",
+              "The color of a plot"
+            ],
+            "ar": [
+              "سطوع الشاشة",
+              "اسم ملف البيانات",
+              "قوة الاتصالات بين الوحدات",
+              "عدد التسميات",
+              "لون الرسم البياني"
+            ],
+            "fr": [
+              "La luminosité de l’écran",
+              "Le nom du fichier de données",
+              "La force des connexions",
+              "Le nombre d’étiquettes",
+              "La couleur du graphique"
+            ]
+          },
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "data_analytics",
+      "name": {
+        "en": "Data Analytics",
+        "ar": "تحليلات البيانات",
+        "fr": "Analyse de données"
+      },
+      "questions": [
+        {
+          "id": "eda01",
+          "question": {
+            "en": "What does a row usually represent in a table of customer data?",
+            "ar": "ماذا يمثّل الصف عادةً في جدول بيانات العملاء؟",
+            "fr": "Que représente généralement une ligne dans un tableau de clients ?"
+          },
+          "options": {
+            "en": [
+              "One column name",
+              "A chart axis",
+              "A formula only",
+              "One customer record",
+              "The whole database"
+            ],
+            "ar": [
+              "اسم عمود واحد",
+              "محور رسم بياني",
+              "صيغة فقط",
+              "سجل عميل واحد",
+              "قاعدة البيانات كاملة"
+            ],
+            "fr": [
+              "Un nom de colonne",
+              "Un axe de graphique",
+              "Une formule uniquement",
+              "Un enregistrement client",
+              "Toute la base de données"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "eda02",
+          "question": {
+            "en": "Which chart is usually best for comparing values across categories?",
+            "ar": "أي رسم بياني يناسب عادةً مقارنة القيم بين الفئات؟",
+            "fr": "Quel graphique convient généralement pour comparer des valeurs par catégorie ?"
+          },
+          "options": {
+            "en": [
+              "Line chart over time",
+              "Bar chart",
+              "Map projection",
+              "Network diagram",
+              "Text paragraph"
+            ],
+            "ar": [
+              "مخطط خطي عبر الزمن",
+              "مخطط أعمدة",
+              "إسقاط خريطة",
+              "مخطط شبكة",
+              "فقرة نصية"
+            ],
+            "fr": [
+              "Courbe temporelle",
+              "Diagramme en barres",
+              "Projection cartographique",
+              "Diagramme de réseau",
+              "Paragraphe de texte"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "eda03",
+          "question": {
+            "en": "What is the median of 2, 4, and 9?",
+            "ar": "ما وسيط القيم 2 و4 و9؟",
+            "fr": "Quelle est la médiane de 2, 4 et 9 ?"
+          },
+          "options": {
+            "en": [
+              "2",
+              "5",
+              "9",
+              "15",
+              "4"
+            ],
+            "ar": [
+              "2",
+              "5",
+              "9",
+              "15",
+              "4"
+            ],
+            "fr": [
+              "2",
+              "5",
+              "9",
+              "15",
+              "4"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "eda04",
+          "question": {
+            "en": "Why should missing values be checked before analysis?",
+            "ar": "لماذا ينبغي فحص القيم المفقودة قبل التحليل؟",
+            "fr": "Pourquoi faut-il vérifier les valeurs manquantes avant l’analyse ?"
+          },
+          "options": {
+            "en": [
+              "They can affect summaries and conclusions",
+              "They always improve accuracy",
+              "They are all equal to zero",
+              "They are extra labels",
+              "They cannot occur in real data"
+            ],
+            "ar": [
+              "قد تؤثر في الملخصات والاستنتاجات",
+              "تحسن الدقة دائمًا",
+              "تساوي الصفر كلها",
+              "تسميات إضافية",
+              "لا تظهر في البيانات الحقيقية"
+            ],
+            "fr": [
+              "Elles peuvent influencer les résumés et conclusions",
+              "Elles améliorent toujours la précision",
+              "Elles valent toutes zéro",
+              "Ce sont des étiquettes supplémentaires",
+              "Elles n’existent pas dans les données réelles"
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "eda05",
+          "question": {
+            "en": "A line chart is most useful for showing what?",
+            "ar": "ما الذي يناسب المخطط الخطي عرضه غالبًا؟",
+            "fr": "À quoi sert surtout un graphique en courbes ?"
+          },
+          "options": {
+            "en": [
+              "Names of unrelated objects",
+              "A single category label",
+              "Change over time",
+              "A folder structure",
+              "A set of passwords"
+            ],
+            "ar": [
+              "أسماء عناصر غير مترابطة",
+              "تسمية فئة واحدة",
+              "التغير بمرور الزمن",
+              "بنية مجلدات",
+              "مجموعة كلمات مرور"
+            ],
+            "fr": [
+              "Des noms d’objets sans lien",
+              "Une seule étiquette de catégorie",
+              "L’évolution dans le temps",
+              "Une structure de dossiers",
+              "Un ensemble de mots de passe"
+            ]
+          },
+          "correct": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,854 @@
+{
+  "categories": [
+    {
+      "id": "python",
+      "name": {
+        "en": "Python",
+        "ar": "بايثون",
+        "fr": "Python"
+      },
+      "questions": [
+        {
+          "id": "py_01",
+          "question": {
+            "en": "What does this expression return: [x*x for x in range(5) if x % 2 == 0]?",
+            "ar": "ما ناتج التعبير التالي: [x*x for x in range(5) if x % 2 == 0]؟",
+            "fr": "Que renvoie cette expression : [x*x for x in range(5) if x % 2 == 0] ?"
+          },
+          "options": {
+            "en": [
+              "[4, 16]",
+              "[0, 2, 4]",
+              "[0, 4, 16]",
+              "[0, 1, 4, 9, 16]",
+              "[1, 9]"
+            ],
+            "ar": [
+              "[4, 16]",
+              "[0, 2, 4]",
+              "[0, 4, 16]",
+              "[0, 1, 4, 9, 16]",
+              "[1, 9]"
+            ],
+            "fr": [
+              "[4, 16]",
+              "[0, 2, 4]",
+              "[0, 4, 16]",
+              "[0, 1, 4, 9, 16]",
+              "[1, 9]"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "py_04",
+          "question": {
+            "en": "Which statement about a generator expression is correct?",
+            "ar": "أي عبارة صحيحة عن تعبير المُولِّد؟",
+            "fr": "Quelle affirmation sur une expression génératrice est correcte ?"
+          },
+          "options": {
+            "en": [
+              "It can be iterated indefinitely only",
+              "It produces values lazily as they are requested",
+              "It always stores every result in a list",
+              "It is evaluated before assignment",
+              "It cannot be used in a for loop"
+            ],
+            "ar": [
+              "لا يمكن تكراره إلا إلى ما لا نهاية",
+              "ينتج القيم عند طلبها تدريجيًا",
+              "يخزن دائمًا كل النتائج في قائمة",
+              "يُقيّم قبل الإسناد",
+              "لا يمكن استخدامه في حلقة for"
+            ],
+            "fr": [
+              "Il ne peut être parcouru qu’indéfiniment",
+              "Il produit les valeurs à la demande, progressivement",
+              "Il stocke toujours tous les résultats dans une liste",
+              "Il est évalué avant l’affectation",
+              "Il ne peut pas être utilisé dans une boucle for"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "pyi01",
+          "question": {
+            "en": "What does `[x*x for x in range(4)]` produce?",
+            "ar": "ما ناتج `[x*x for x in range(4)]`؟",
+            "fr": "Que produit `[x*x for x in range(4)]` ?"
+          },
+          "options": {
+            "en": [
+              "[0, 1, 4, 9]",
+              "[1, 4, 9, 16]",
+              "[0, 1, 2, 3]",
+              "[0, 4, 8, 12]",
+              "An error"
+            ],
+            "ar": [
+              "[0, 1, 4, 9]",
+              "[1, 4, 9, 16]",
+              "[0, 1, 2, 3]",
+              "[0, 4, 8, 12]",
+              "خطأ"
+            ],
+            "fr": [
+              "[0, 1, 4, 9]",
+              "[1, 4, 9, 16]",
+              "[0, 1, 2, 3]",
+              "[0, 4, 8, 12]",
+              "Une erreur"
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "pyi02",
+          "question": {
+            "en": "After `x=[1,2]; y=x; y.append(3)`, what is `x`?",
+            "ar": "بعد `x=[1,2]; y=x; y.append(3)`، ما قيمة `x`؟",
+            "fr": "Après `x=[1,2]; y=x; y.append(3)`, que vaut `x` ?"
+          },
+          "options": {
+            "en": [
+              "[1, 2]",
+              "[3]",
+              "[1, 2, 3]",
+              "None",
+              "An error"
+            ],
+            "ar": [
+              "[1, 2]",
+              "[3]",
+              "[1, 2, 3]",
+              "None",
+              "خطأ"
+            ],
+            "fr": [
+              "[1, 2]",
+              "[3]",
+              "[1, 2, 3]",
+              "None",
+              "Une erreur"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "pyi03",
+          "question": {
+            "en": "What does `settings.get(\"theme\", \"dark\")` return if `theme` is absent?",
+            "ar": "ماذا تُرجع `settings.get(\"theme\", \"dark\")` إذا لم يكن المفتاح `theme` موجودًا؟",
+            "fr": "Que renvoie `settings.get(\"theme\", \"dark\")` si la clé `theme` est absente ?"
+          },
+          "options": {
+            "en": [
+              "None",
+              "An error",
+              "The first key",
+              "\"dark\"",
+              "False"
+            ],
+            "ar": [
+              "None",
+              "خطأ",
+              "أول مفتاح",
+              "\"dark\"",
+              "False"
+            ],
+            "fr": [
+              "None",
+              "Une erreur",
+              "La première clé",
+              "\"dark\"",
+              "False"
+            ]
+          },
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "id": "r",
+      "name": {
+        "en": "R",
+        "ar": "R",
+        "fr": "R"
+      },
+      "questions": [
+        {
+          "id": "r_01",
+          "question": {
+            "en": "For a data frame `df`, what does `df |> subset(x > 3)` retain?",
+            "ar": "في إطار البيانات `df`، ما الصفوف التي يحتفظ بها `df |> subset(x > 3)`؟",
+            "fr": "Pour un data frame `df`, quelles lignes conserve `df |> subset(x > 3)` ?"
+          },
+          "options": {
+            "en": [
+              "Rows with missing x values",
+              "Rows where x equals 3",
+              "Rows where x is greater than 3",
+              "Columns whose names exceed 3 characters",
+              "Only the x column"
+            ],
+            "ar": [
+              "الصفوف ذات قيم x المفقودة",
+              "الصفوف التي تساوي فيها x العدد 3",
+              "الصفوف التي تكون فيها x أكبر من 3",
+              "الأعمدة التي يزيد طول أسمائها على 3 أحرف",
+              "عمود x فقط"
+            ],
+            "fr": [
+              "Les lignes où x est manquant",
+              "Les lignes où x vaut 3",
+              "Les lignes où x est supérieur à 3",
+              "Les colonnes dont le nom dépasse 3 caractères",
+              "Uniquement la colonne x"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "r_02",
+          "question": {
+            "en": "What does `NA == NA` evaluate to in R?",
+            "ar": "ما ناتج `NA == NA` في R؟",
+            "fr": "Que renvoie `NA == NA` en R ?"
+          },
+          "options": {
+            "en": [
+              "TRUE",
+              "FALSE",
+              "NULL",
+              "An error",
+              "NA"
+            ],
+            "ar": [
+              "TRUE",
+              "FALSE",
+              "NULL",
+              "خطأ",
+              "NA"
+            ],
+            "fr": [
+              "TRUE",
+              "FALSE",
+              "NULL",
+              "Une erreur",
+              "NA"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "r_05",
+          "question": {
+            "en": "In `lm(y ~ x1 + x2, data=d)`, what does the intercept represent when predictors equal zero?",
+            "ar": "في `lm(y ~ x1 + x2, data=d)`، ماذا يمثل الثابت عندما تكون المتغيرات التنبؤية صفرًا؟",
+            "fr": "Dans `lm(y ~ x1 + x2, data=d)`, que représente l’intercept lorsque les variables prédictives valent zéro ?"
+          },
+          "options": {
+            "en": [
+              "The sample size",
+              "The mean of all predictors",
+              "The correlation between x1 and x2",
+              "The model’s predicted y value",
+              "The residual variance"
+            ],
+            "ar": [
+              "حجم العينة",
+              "متوسط جميع المتغيرات التنبؤية",
+              "الارتباط بين x1 وx2",
+              "قيمة y التي يتنبأ بها النموذج",
+              "تباين البواقي"
+            ],
+            "fr": [
+              "La taille de l’échantillon",
+              "La moyenne de tous les prédicteurs",
+              "La corrélation entre x1 et x2",
+              "La valeur de y prédite par le modèle",
+              "La variance des résidus"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "rmi01",
+          "question": {
+            "en": "Given `x <- c(1, 2, 3)`, what does `x[x > 1]` return?",
+            "ar": "إذا كان `x <- c(1, 2, 3)`، فما ناتج `x[x > 1]`؟",
+            "fr": "Avec `x <- c(1, 2, 3)`, que renvoie `x[x > 1]` ?"
+          },
+          "options": {
+            "en": [
+              "1",
+              "2, 3",
+              "TRUE, TRUE",
+              "3 only",
+              "An error"
+            ],
+            "ar": [
+              "1",
+              "2، 3",
+              "TRUE، TRUE",
+              "3 فقط",
+              "خطأ"
+            ],
+            "fr": [
+              "1",
+              "2, 3",
+              "TRUE, TRUE",
+              "3 uniquement",
+              "Une erreur"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "rmi02",
+          "question": {
+            "en": "A data frame has scores 8 and 5. What does `df[df$score > 6, ]` keep?",
+            "ar": "يحتوي إطار بيانات على درجتين 8 و5. ما الذي تحتفظ به `df[df$score > 6, ]`؟",
+            "fr": "Un tableau contient les notes 8 et 5. Que conserve `df[df$score > 6, ]` ?"
+          },
+          "options": {
+            "en": [
+              "Both rows",
+              "The row with score 5",
+              "No rows",
+              "The row with score 8",
+              "Only the score column"
+            ],
+            "ar": [
+              "الصفان",
+              "الصف ذو الدرجة 5",
+              "لا صفوف",
+              "الصف ذو الدرجة 8",
+              "عمود الدرجة فقط"
+            ],
+            "fr": [
+              "Les deux lignes",
+              "La ligne avec la note 5",
+              "Aucune ligne",
+              "La ligne avec la note 8",
+              "La colonne des notes uniquement"
+            ]
+          },
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "id": "machine_learning",
+      "name": {
+        "en": "Machine Learning",
+        "ar": "التعلم الآلي",
+        "fr": "Apprentissage automatique"
+      },
+      "questions": [
+        {
+          "id": "ml_01",
+          "question": {
+            "en": "A classifier has 98% accuracy on data where 98% of examples are negative. Why may accuracy be misleading?",
+            "ar": "حقق مصنف دقة 98% في بيانات 98% من أمثلتها سالبة. لماذا قد تكون الدقة مضللة؟",
+            "fr": "Un classifieur atteint 98 % de précision sur des données dont 98 % des exemples sont négatifs. Pourquoi cette mesure peut-elle être trompeuse ?"
+          },
+          "options": {
+            "en": [
+              "Accuracy measures calibration only",
+              "It proves the model is overfitting",
+              "The test set must be too small",
+              "A model predicting only the majority class can achieve that score",
+              "Accuracy is undefined for binary classification"
+            ],
+            "ar": [
+              "تقيس الدقة المعايرة فقط",
+              "هذا يثبت أن النموذج يعاني فرط التكيّف",
+              "لا بد أن مجموعة الاختبار صغيرة جدًا",
+              "يمكن لنموذج يتنبأ دائمًا بالفئة الأكثر شيوعًا تحقيق هذه النتيجة",
+              "الدقة غير معرّفة للتصنيف الثنائي"
+            ],
+            "fr": [
+              "La précision mesure uniquement le calibrage",
+              "Cela prouve un surapprentissage",
+              "L’ensemble de test est forcément trop petit",
+              "Un modèle prédisant toujours la classe majoritaire peut obtenir ce score",
+              "La précision n’est pas définie pour une classification binaire"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "ml_03",
+          "question": {
+            "en": "In k-fold cross-validation, what is the primary role of the held-out fold in each iteration?",
+            "ar": "ما الدور الأساسي للطيّة المحجوبة في كل تكرار من التحقق المتقاطع k-fold؟",
+            "fr": "Quel est le rôle principal du pli mis de côté à chaque itération de la validation croisée k-fold ?"
+          },
+          "options": {
+            "en": [
+              "Balance the classes automatically",
+              "Increase model capacity",
+              "Choose training labels",
+              "Replace feature engineering",
+              "Estimate generalization performance on unseen data"
+            ],
+            "ar": [
+              "موازنة الفئات تلقائيًا",
+              "زيادة سعة النموذج",
+              "اختيار تسميات التدريب",
+              "استبدال هندسة السمات",
+              "تقدير أداء التعميم على بيانات غير مرئية"
+            ],
+            "fr": [
+              "Équilibrer automatiquement les classes",
+              "Augmenter la capacité du modèle",
+              "Choisir les étiquettes d’entraînement",
+              "Remplacer l’ingénierie des caractéristiques",
+              "Estimer les performances de généralisation sur des données inédites"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "ml_05",
+          "question": {
+            "en": "A model performs well on training data but poorly on unseen data. Which change most directly targets this problem?",
+            "ar": "يؤدي نموذج جيدًا على بيانات التدريب وضعيفًا على بيانات جديدة. أي تغيير يعالج المشكلة مباشرةً؟",
+            "fr": "Un modèle réussit sur les données d’entraînement mais échoue sur des données inédites. Quel changement cible le plus directement ce problème ?"
+          },
+          "options": {
+            "en": [
+              "Evaluate on training data only",
+              "Remove the validation set",
+              "Increase regularization or reduce model complexity",
+              "Increase the number of model parameters",
+              "Train longer with the same model and data"
+            ],
+            "ar": [
+              "التقييم على بيانات التدريب فقط",
+              "حذف مجموعة التحقق",
+              "زيادة الانتظام أو تقليل تعقيد النموذج",
+              "زيادة عدد معاملات النموذج",
+              "إطالة التدريب بالنموذج والبيانات نفسيهما"
+            ],
+            "fr": [
+              "Évaluer uniquement sur les données d’entraînement",
+              "Supprimer l’ensemble de validation",
+              "Augmenter la régularisation ou réduire la complexité du modèle",
+              "Augmenter le nombre de paramètres du modèle",
+              "Entraîner plus longtemps avec le même modèle et les mêmes données"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "mli01",
+          "question": {
+            "en": "What does standardizing a feature usually do?",
+            "ar": "ماذا يفعل توحيد مقياس السمة عادةً؟",
+            "fr": "Que fait généralement la standardisation d’une variable ?"
+          },
+          "options": {
+            "en": [
+              "Centers it near zero and scales its spread",
+              "Turns it into a class label",
+              "Removes the target",
+              "Sorts its rows",
+              "Makes every value equal"
+            ],
+            "ar": [
+              "يجعل متوسطها قريبًا من الصفر ويضبط تشتتها",
+              "يحولها إلى تسمية فئة",
+              "يحذف الهدف",
+              "يرتب صفوفها",
+              "يجعل كل القيم متساوية"
+            ],
+            "fr": [
+              "Centre sa moyenne près de zéro et ajuste sa dispersion",
+              "La transforme en étiquette de classe",
+              "Supprime la cible",
+              "Trie ses lignes",
+              "Rend toutes les valeurs égales"
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "mli02",
+          "question": {
+            "en": "What is a validation set commonly used for during model development?",
+            "ar": "فيمَ تُستخدم مجموعة التحقق عادةً أثناء تطوير النموذج؟",
+            "fr": "À quoi sert généralement un ensemble de validation pendant le développement ?"
+          },
+          "options": {
+            "en": [
+              "Final reporting only",
+              "Choosing settings and comparing models",
+              "Training the final model only",
+              "Replacing all training data",
+              "Creating new labels"
+            ],
+            "ar": [
+              "للتقرير النهائي فقط",
+              "اختيار الإعدادات ومقارنة النماذج",
+              "لتدريب النموذج النهائي فقط",
+              "لاستبدال بيانات التدريب كلها",
+              "إنشاء تسميات جديدة"
+            ],
+            "fr": [
+              "Uniquement pour le rapport final",
+              "Choisir les réglages et comparer les modèles",
+              "Uniquement pour entraîner le modèle final",
+              "Remplacer toutes les données d’entraînement",
+              "Créer de nouvelles étiquettes"
+            ]
+          },
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "deep_learning",
+      "name": {
+        "en": "Deep Learning",
+        "ar": "التعلم العميق",
+        "fr": "Apprentissage profond"
+      },
+      "questions": [
+        {
+          "id": "dlm01",
+          "question": {
+            "en": "What does a ReLU activation return for a negative input?",
+            "ar": "ماذا تُرجع دالة التنشيط ReLU عند إدخال قيمة سالبة؟",
+            "fr": "Que renvoie l’activation ReLU pour une entrée négative ?"
+          },
+          "options": {
+            "en": [
+              "The input unchanged",
+              "One",
+              "The absolute value",
+              "An error",
+              "Zero"
+            ],
+            "ar": [
+              "المدخل كما هو",
+              "واحد",
+              "القيمة المطلقة",
+              "خطأ",
+              "صفر"
+            ],
+            "fr": [
+              "L’entrée inchangée",
+              "Un",
+              "La valeur absolue",
+              "Une erreur",
+              "Zéro"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "dlm02",
+          "question": {
+            "en": "What does a convolution filter do as it moves over an image?",
+            "ar": "ماذا يفعل مرشح الالتفاف أثناء مروره على الصورة؟",
+            "fr": "Que fait un filtre de convolution lorsqu’il parcourt une image ?"
+          },
+          "options": {
+            "en": [
+              "Sorts image labels",
+              "Looks for local patterns",
+              "Deletes pixels at random",
+              "Changes the image file name",
+              "Calculates the class accuracy"
+            ],
+            "ar": [
+              "يرتب تسميات الصور",
+              "يبحث عن أنماط محلية",
+              "يحذف وحدات البكسل عشوائيًا",
+              "يغير اسم ملف الصورة",
+              "يحسب دقة الفئة"
+            ],
+            "fr": [
+              "Trie les étiquettes des images",
+              "Recherche des motifs locaux",
+              "Supprime des pixels au hasard",
+              "Change le nom du fichier image",
+              "Calcule la précision de classe"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "dlm03",
+          "question": {
+            "en": "What is a common effect of pooling in a convolutional network?",
+            "ar": "ما الأثر الشائع لعملية التجميع في شبكة التفاف؟",
+            "fr": "Quel est un effet courant du pooling dans un réseau convolutif ?"
+          },
+          "options": {
+            "en": [
+              "Adds more image pixels",
+              "Creates training labels",
+              "Replaces every convolution",
+              "Reduces spatial dimensions",
+              "Increases image resolution"
+            ],
+            "ar": [
+              "إضافة وحدات بكسل للصورة",
+              "إنشاء تسميات التدريب",
+              "استبدال كل عمليات الالتفاف",
+              "تقليل الأبعاد المكانية",
+              "زيادة دقة الصورة"
+            ],
+            "fr": [
+              "Ajouter des pixels à l’image",
+              "Créer des étiquettes d’entraînement",
+              "Remplacer chaque convolution",
+              "Réduire les dimensions spatiales",
+              "Augmenter la résolution"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "dlm04",
+          "question": {
+            "en": "Why train on small batches instead of one example at a time?",
+            "ar": "لماذا يتم التدريب على دفعات صغيرة بدلًا من مثال واحد في كل مرة؟",
+            "fr": "Pourquoi entraîner le modèle par petits lots plutôt qu’un exemple à la fois ?"
+          },
+          "options": {
+            "en": [
+              "To average gradient information across examples",
+              "To remove the need for a loss",
+              "To avoid updating weights",
+              "To make labels continuous",
+              "To guarantee zero error"
+            ],
+            "ar": [
+              "لجمع معلومات التدرج عبر عدة أمثلة",
+              "لإلغاء الحاجة إلى دالة خسارة",
+              "لتجنب تحديث الأوزان",
+              "لجعل التسميات مستمرة",
+              "لضمان انعدام الخطأ"
+            ],
+            "fr": [
+              "Pour combiner les gradients de plusieurs exemples",
+              "Pour supprimer le besoin d’une perte",
+              "Pour éviter de mettre à jour les poids",
+              "Pour rendre les étiquettes continues",
+              "Pour garantir une erreur nulle"
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "dlm05",
+          "question": {
+            "en": "Validation performance worsens while training performance improves. What is a useful response?",
+            "ar": "يتراجع أداء التحقق بينما يتحسن أداء التدريب. ما الإجراء المفيد؟",
+            "fr": "Les performances de validation baissent tandis que celles d’entraînement s’améliorent. Que faire ?"
+          },
+          "options": {
+            "en": [
+              "Train indefinitely",
+              "Remove the validation data",
+              "Use early stopping or stronger regularization",
+              "Increase model size immediately",
+              "Shuffle the class names"
+            ],
+            "ar": [
+              "مواصلة التدريب بلا توقف",
+              "حذف بيانات التحقق",
+              "استخدام الإيقاف المبكر أو زيادة التنظيم",
+              "زيادة حجم النموذج فورًا",
+              "خلط أسماء الفئات"
+            ],
+            "fr": [
+              "Continuer l’entraînement indéfiniment",
+              "Supprimer les données de validation",
+              "Utiliser l’arrêt précoce ou davantage de régularisation",
+              "Augmenter immédiatement le modèle",
+              "Mélanger les noms des classes"
+            ]
+          },
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "data_analytics",
+      "name": {
+        "en": "Data Analytics",
+        "ar": "تحليلات البيانات",
+        "fr": "Analyse de données"
+      },
+      "questions": [
+        {
+          "id": "da_01",
+          "question": {
+            "en": "A dashboard shows rising revenue, but the number of customers doubled. Which metric best checks whether revenue per customer improved?",
+            "ar": "تعرض لوحة المعلومات ارتفاع الإيرادات، لكن عدد العملاء تضاعف. أي مقياس يختبر أفضل ما إذا تحسنت الإيرادات لكل عميل؟",
+            "fr": "Un tableau de bord montre une hausse du chiffre d’affaires, mais le nombre de clients a doublé. Quel indicateur vérifie le mieux si le revenu par client a augmenté ?"
+          },
+          "options": {
+            "en": [
+              "Total website visits",
+              "Revenue divided by number of customers",
+              "Total revenue alone",
+              "Maximum order value",
+              "Number of transactions"
+            ],
+            "ar": [
+              "إجمالي زيارات الموقع",
+              "الإيرادات مقسومة على عدد العملاء",
+              "إجمالي الإيرادات وحده",
+              "أكبر قيمة طلب",
+              "عدد المعاملات"
+            ],
+            "fr": [
+              "Nombre total de visites du site",
+              "Chiffre d’affaires divisé par le nombre de clients",
+              "Chiffre d’affaires total seul",
+              "Valeur maximale d’une commande",
+              "Nombre de transactions"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "da_04",
+          "question": {
+            "en": "A dataset has a long right tail. Which summary is generally more robust for describing a typical value?",
+            "ar": "لدى مجموعة البيانات ذيل طويل إلى اليمين. أي ملخص يكون عادةً أكثر متانة لوصف قيمة نموذجية؟",
+            "fr": "Un jeu de données présente une longue queue à droite. Quel résumé est généralement plus robuste pour décrire une valeur typique ?"
+          },
+          "options": {
+            "en": [
+              "Maximum",
+              "Sum",
+              "Median",
+              "Variance",
+              "Mean"
+            ],
+            "ar": [
+              "القيمة القصوى",
+              "المجموع",
+              "الوسيط",
+              "التباين",
+              "المتوسط الحسابي"
+            ],
+            "fr": [
+              "Maximum",
+              "Somme",
+              "Médiane",
+              "Variance",
+              "Moyenne"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "da_05",
+          "question": {
+            "en": "A report compares two regions with different population sizes. Which rate supports a fairer comparison of incident frequency?",
+            "ar": "يقارن تقرير منطقتين مختلفتين في حجم السكان. أي معدل يدعم مقارنة أعدل لتكرار الحوادث؟",
+            "fr": "Un rapport compare deux régions de tailles de population différentes. Quel taux permet une comparaison plus équitable de la fréquence des incidents ?"
+          },
+          "options": {
+            "en": [
+              "Number of reporting offices",
+              "Largest monthly count",
+              "Average incident cost",
+              "Incidents per 100,000 residents",
+              "Total incidents only"
+            ],
+            "ar": [
+              "عدد مكاتب الإبلاغ",
+              "أكبر عدد شهري",
+              "متوسط تكلفة الحادث",
+              "الحوادث لكل 100,000 نسمة",
+              "إجمالي الحوادث فقط"
+            ],
+            "fr": [
+              "Nombre de bureaux de signalement",
+              "Plus grand total mensuel",
+              "Coût moyen d’un incident",
+              "Incidents pour 100 000 habitants",
+              "Nombre total d’incidents seulement"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "dai01",
+          "question": {
+            "en": "A store has 20 purchases from 200 visitors. What is its conversion rate?",
+            "ar": "لدى متجر 20 عملية شراء من أصل 200 زائر. ما معدل التحويل؟",
+            "fr": "Un magasin compte 20 achats pour 200 visiteurs. Quel est son taux de conversion ?"
+          },
+          "options": {
+            "en": [
+              "1%",
+              "5%",
+              "10%",
+              "20%",
+              "40%"
+            ],
+            "ar": [
+              "1٪",
+              "5٪",
+              "10٪",
+              "20٪",
+              "40٪"
+            ],
+            "fr": [
+              "1 %",
+              "5 %",
+              "10 %",
+              "20 %",
+              "40 %"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "dai02",
+          "question": {
+            "en": "Which chart best shows how a measurement changes month by month?",
+            "ar": "أي رسم بياني يوضح أفضل تغير مقياس من شهر إلى شهر؟",
+            "fr": "Quel graphique montre le mieux l’évolution mensuelle d’une mesure ?"
+          },
+          "options": {
+            "en": [
+              "Pie chart",
+              "Network diagram",
+              "Bar chart of unrelated groups",
+              "Map",
+              "Line chart over time"
+            ],
+            "ar": [
+              "مخطط دائري",
+              "مخطط شبكة",
+              "مخطط أعمدة لفئات غير مترابطة",
+              "خريطة",
+              "مخطط خطي عبر الزمن"
+            ],
+            "fr": [
+              "Diagramme circulaire",
+              "Diagramme de réseau",
+              "Barres de groupes sans lien",
+              "Carte",
+              "Courbe temporelle"
+            ]
+          },
+          "correct": 4
+        }
+      ]
+    }
+  ]
+}

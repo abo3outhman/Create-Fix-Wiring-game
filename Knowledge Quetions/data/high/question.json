@@ -1,0 +1,854 @@
+{
+  "categories": [
+    {
+      "id": "python",
+      "name": {
+        "en": "Python",
+        "ar": "بايثون",
+        "fr": "Python"
+      },
+      "questions": [
+        {
+          "id": "py_02",
+          "question": {
+            "en": "After `a = [[1, 2], [3, 4]]; b = a[:]`, what happens if `b[0][0] = 9`?",
+            "ar": "بعد تنفيذ `a = [[1, 2], [3, 4]]; b = a[:]`، ماذا يحدث عند تنفيذ `b[0][0] = 9`؟",
+            "fr": "Après `a = [[1, 2], [3, 4]]; b = a[:]`, que se passe-t-il si `b[0][0] = 9` ?"
+          },
+          "options": {
+            "en": [
+              "Neither value changes",
+              "An exception is raised",
+              "Both lists are replaced by integers",
+              "Only b[0][0] becomes 9",
+              "Both a[0][0] and b[0][0] become 9"
+            ],
+            "ar": [
+              "لا تتغير أي قيمة",
+              "يحدث استثناء",
+              "تُستبدل القائمتان بأعداد صحيحة",
+              "تتغير b[0][0] فقط إلى 9",
+              "تصبح قيمة a[0][0] وb[0][0] هي 9"
+            ],
+            "fr": [
+              "Aucune valeur ne change",
+              "Une exception est levée",
+              "Les deux listes sont remplacées par des entiers",
+              "Seul b[0][0] devient 9",
+              "a[0][0] et b[0][0] valent toutes deux 9"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "py_03",
+          "question": {
+            "en": "What is the average time complexity of dictionary key lookup in Python?",
+            "ar": "ما متوسط التعقيد الزمني للبحث عن مفتاح في قاموس بايثون؟",
+            "fr": "Quelle est la complexité temporelle moyenne de la recherche d’une clé dans un dictionnaire Python ?"
+          },
+          "options": {
+            "en": [
+              "O(n)",
+              "O(1)",
+              "O(log n)",
+              "O(n²)",
+              "O(n log n)"
+            ],
+            "ar": [
+              "O(n)",
+              "O(1)",
+              "O(log n)",
+              "O(n²)",
+              "O(n log n)"
+            ],
+            "fr": [
+              "O(n)",
+              "O(1)",
+              "O(log n)",
+              "O(n²)",
+              "O(n log n)"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "py_05",
+          "question": {
+            "en": "In a function, what does `nonlocal count` do?",
+            "ar": "ماذا يفعل التصريح `nonlocal count` داخل دالة؟",
+            "fr": "Dans une fonction, que fait la déclaration `nonlocal count` ?"
+          },
+          "options": {
+            "en": [
+              "Creates a constant named count",
+              "Makes count a global variable",
+              "Copies count into the local scope",
+              "Binds count to a variable in the nearest enclosing function scope",
+              "Deletes the enclosing count"
+            ],
+            "ar": [
+              "ينشئ ثابتًا اسمه count",
+              "يجعل count متغيرًا عامًا",
+              "ينسخ count إلى النطاق المحلي",
+              "يربط count بالمتغير في أقرب نطاق دالة محيط",
+              "يحذف count من النطاق المحيط"
+            ],
+            "fr": [
+              "Crée une constante nommée count",
+              "Fait de count une variable globale",
+              "Copie count dans la portée locale",
+              "Lie count à la variable du contexte de fonction englobant le plus proche",
+              "Supprime count de la portée englobante"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "hpy01",
+          "question": {
+            "en": "What is printed by `f = lambda x: x + 1; print(list(map(f, [1, 2])))`?",
+            "ar": "ما الناتج من `f = lambda x: x + 1; print(list(map(f, [1, 2])))`؟",
+            "fr": "Qu’affiche `f = lambda x: x + 1; print(list(map(f, [1, 2])))` ?"
+          },
+          "options": {
+            "en": [
+              "[1, 2]",
+              "[3, 4]",
+              "[2, 3]",
+              "A map object",
+              "An error"
+            ],
+            "ar": [
+              "[1, 2]",
+              "[3, 4]",
+              "[2, 3]",
+              "كائن map",
+              "خطأ"
+            ],
+            "fr": [
+              "[1, 2]",
+              "[3, 4]",
+              "[2, 3]",
+              "Un objet map",
+              "Une erreur"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "hpy02",
+          "question": {
+            "en": "A function changes a list passed to it. Why can the caller see that change?",
+            "ar": "غيّرت دالة قائمة مُررت إليها. لماذا يستطيع المستدعي رؤية هذا التغيير؟",
+            "fr": "Une fonction modifie une liste reçue en argument. Pourquoi l’appelant voit-il ce changement ?"
+          },
+          "options": {
+            "en": [
+              "Python copies every list automatically",
+              "Lists are global variables",
+              "The function returns the list implicitly",
+              "Arguments are always strings",
+              "The function receives a reference to the same mutable object"
+            ],
+            "ar": [
+              "تنسخ بايثون كل قائمة تلقائيًا",
+              "القوائم متغيرات عامة",
+              "تُرجع الدالة القائمة ضمنيًا",
+              "المعاملات نصوص دائمًا",
+              "تتلقى الدالة مرجعًا إلى الكائن القابل للتغيير نفسه"
+            ],
+            "fr": [
+              "Python copie automatiquement chaque liste",
+              "Les listes sont des variables globales",
+              "La fonction renvoie implicitement la liste",
+              "Les arguments sont toujours des chaînes",
+              "La fonction reçoit une référence au même objet mutable"
+            ]
+          },
+          "correct": 4
+        }
+      ]
+    },
+    {
+      "id": "r",
+      "name": {
+        "en": "R",
+        "ar": "R",
+        "fr": "R"
+      },
+      "questions": [
+        {
+          "id": "r_03",
+          "question": {
+            "en": "If `x <- c(2, 4, 6); x[c(TRUE, FALSE)]`, what does R return?",
+            "ar": "إذا كان `x <- c(2, 4, 6)`، فما ناتج `x[c(TRUE, FALSE)]` في R؟",
+            "fr": "Si `x <- c(2, 4, 6)`, que renvoie `x[c(TRUE, FALSE)]` en R ?"
+          },
+          "options": {
+            "en": [
+              "2 only",
+              "4 only",
+              "An error",
+              "2, 6",
+              "2, 4, 6"
+            ],
+            "ar": [
+              "2 فقط",
+              "4 فقط",
+              "خطأ",
+              "2 و6",
+              "2 و4 و6"
+            ],
+            "fr": [
+              "2 seulement",
+              "4 seulement",
+              "Une erreur",
+              "2 et 6",
+              "2, 4 et 6"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "r_04",
+          "question": {
+            "en": "Which function applies a function to each row of a data frame and returns a vector or array?",
+            "ar": "أي دالة تطبق دالة على كل صف في إطار البيانات وتعيد متجهًا أو مصفوفة؟",
+            "fr": "Quelle fonction applique une fonction à chaque ligne d’un data frame et renvoie un vecteur ou un tableau ?"
+          },
+          "options": {
+            "en": [
+              "aggregate(df, FUN)",
+              "lapply(df, FUN)",
+              "sapply(df, FUN)",
+              "tapply(df, FUN)",
+              "apply(df, 1, FUN)"
+            ],
+            "ar": [
+              "aggregate(df, FUN)",
+              "lapply(df, FUN)",
+              "sapply(df, FUN)",
+              "tapply(df, FUN)",
+              "apply(df, 1, FUN)"
+            ],
+            "fr": [
+              "aggregate(df, FUN)",
+              "lapply(df, FUN)",
+              "sapply(df, FUN)",
+              "tapply(df, FUN)",
+              "apply(df, 1, FUN)"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "hr01",
+          "question": {
+            "en": "What does `x <- c(1, 2); x + c(10, 20, 30, 40)` return in R?",
+            "ar": "ما ناتج `x <- c(1, 2); x + c(10, 20, 30, 40)` في R؟",
+            "fr": "Que renvoie `x <- c(1, 2); x + c(10, 20, 30, 40)` en R ?"
+          },
+          "options": {
+            "en": [
+              "11, 22, 33, 44",
+              "11, 22, 31, 42",
+              "An error",
+              "10, 20, 30, 40",
+              "1, 2, 10, 20"
+            ],
+            "ar": [
+              "11، 22، 33، 44",
+              "11، 22، 31، 42",
+              "خطأ",
+              "10، 20، 30، 40",
+              "1، 2، 10، 20"
+            ],
+            "fr": [
+              "11, 22, 33, 44",
+              "11, 22, 31, 42",
+              "Une erreur",
+              "10, 20, 30, 40",
+              "1, 2, 10, 20"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "hr02",
+          "question": {
+            "en": "In R, what does `which(c(FALSE, TRUE, FALSE, TRUE))` return?",
+            "ar": "ماذا تُرجع `which(c(FALSE, TRUE, FALSE, TRUE))` في R؟",
+            "fr": "Que renvoie `which(c(FALSE, TRUE, FALSE, TRUE))` en R ?"
+          },
+          "options": {
+            "en": [
+              "1, 3",
+              "TRUE, TRUE",
+              "4 only",
+              "2, 4",
+              "An error"
+            ],
+            "ar": [
+              "1، 3",
+              "TRUE، TRUE",
+              "4 فقط",
+              "2، 4",
+              "خطأ"
+            ],
+            "fr": [
+              "1, 3",
+              "TRUE, TRUE",
+              "4 uniquement",
+              "2, 4",
+              "Une erreur"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "hr03",
+          "question": {
+            "en": "Why can `mean(x)` return `NA` when a vector contains a missing value?",
+            "ar": "لماذا قد تُرجع `mean(x)` القيمة `NA` عندما يحتوي المتجه على قيمة مفقودة؟",
+            "fr": "Pourquoi `mean(x)` peut-il renvoyer `NA` si le vecteur contient une valeur manquante ?"
+          },
+          "options": {
+            "en": [
+              "Missing values propagate unless removed with `na.rm = TRUE`",
+              "R replaces every missing value with zero",
+              "The vector must be sorted",
+              "Mean works only on text",
+              "The function needs a data frame"
+            ],
+            "ar": [
+              "تنتقل القيم المفقودة إلى الناتج ما لم تُستبعد باستخدام `na.rm = TRUE`",
+              "تستبدل R كل قيمة مفقودة بصفر",
+              "يجب ترتيب المتجه",
+              "يعمل mean على النصوص فقط",
+              "تحتاج الدالة إلى إطار بيانات"
+            ],
+            "fr": [
+              "Les valeurs manquantes se propagent sauf si `na.rm = TRUE` les retire",
+              "R remplace chaque valeur manquante par zéro",
+              "Le vecteur doit être trié",
+              "mean ne fonctionne que sur du texte",
+              "La fonction exige un tableau de données"
+            ]
+          },
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "machine_learning",
+      "name": {
+        "en": "Machine Learning",
+        "ar": "التعلم الآلي",
+        "fr": "Apprentissage automatique"
+      },
+      "questions": [
+        {
+          "id": "ml_02",
+          "question": {
+            "en": "Why should feature scaling be fitted on the training set only before transforming validation and test sets?",
+            "ar": "لماذا يجب حساب معاملات تحجيم السمات من مجموعة التدريب فقط قبل تحويل مجموعتي التحقق والاختبار؟",
+            "fr": "Pourquoi ajuster la mise à l’échelle des caractéristiques uniquement sur l’ensemble d’entraînement avant de transformer validation et test ?"
+          },
+          "options": {
+            "en": [
+              "To avoid needing a validation set",
+              "To remove all outliers",
+              "To guarantee normally distributed features",
+              "To increase the number of training examples",
+              "To prevent information leakage from evaluation data"
+            ],
+            "ar": [
+              "للاستغناء عن مجموعة التحقق",
+              "لإزالة جميع القيم المتطرفة",
+              "لضمان التوزيع الطبيعي للسمات",
+              "لزيادة عدد أمثلة التدريب",
+              "لمنع تسرب المعلومات من بيانات التقييم"
+            ],
+            "fr": [
+              "Pour éviter d’avoir un ensemble de validation",
+              "Pour supprimer toutes les valeurs aberrantes",
+              "Pour garantir une distribution normale des caractéristiques",
+              "Pour augmenter le nombre d’exemples d’entraînement",
+              "Pour éviter toute fuite d’information des données d’évaluation"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "ml_04",
+          "question": {
+            "en": "What is the effect of increasing the regularization strength in L2-regularized linear regression?",
+            "ar": "ما أثر زيادة قوة الانتظام L2 في الانحدار الخطي؟",
+            "fr": "Quel est l’effet d’une augmentation de la régularisation L2 en régression linéaire ?"
+          },
+          "options": {
+            "en": [
+              "It increases the number of features",
+              "It removes the intercept in every implementation",
+              "It penalizes large coefficients more strongly",
+              "It guarantees lower training error",
+              "It converts regression into classification"
+            ],
+            "ar": [
+              "يزيد عدد السمات",
+              "يحذف الثابت في كل التطبيقات",
+              "يزيد معاقبة المعاملات الكبيرة",
+              "يضمن خفض خطأ التدريب",
+              "يحوّل الانحدار إلى تصنيف"
+            ],
+            "fr": [
+              "Elle augmente le nombre de caractéristiques",
+              "Elle supprime l’intercept dans toute implémentation",
+              "Elle pénalise davantage les grands coefficients",
+              "Elle garantit une erreur d’entraînement plus faible",
+              "Elle transforme la régression en classification"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "hml01",
+          "question": {
+            "en": "A preprocessing scaler is fitted before a train/test split. What is the key problem?",
+            "ar": "تمت ملاءمة أداة تحجيم البيانات قبل تقسيم التدريب والاختبار. ما المشكلة الأساسية؟",
+            "fr": "Un normaliseur est ajusté avant la séparation entraînement/test. Quel est le problème principal ?"
+          },
+          "options": {
+            "en": [
+              "The model gets fewer features",
+              "The labels become strings",
+              "Test-set information leaks into training",
+              "Scaling becomes impossible",
+              "The test set is enlarged"
+            ],
+            "ar": [
+              "يحصل النموذج على سمات أقل",
+              "تصبح التسميات نصوصًا",
+              "تتسرب معلومات مجموعة الاختبار إلى التدريب",
+              "يصبح التحجيم مستحيلًا",
+              "تكبر مجموعة الاختبار"
+            ],
+            "fr": [
+              "Le modèle reçoit moins de variables",
+              "Les étiquettes deviennent du texte",
+              "Des informations du test fuient dans l’entraînement",
+              "La normalisation devient impossible",
+              "L’ensemble de test est agrandi"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "hml02",
+          "question": {
+            "en": "For rare positive cases, which metric is often more informative than accuracy?",
+            "ar": "عند ندرة الحالات الإيجابية، أي مقياس يكون غالبًا أكثر إفادة من الدقة العامة؟",
+            "fr": "Pour des cas positifs rares, quelle mesure est souvent plus informative que l’exactitude ?"
+          },
+          "options": {
+            "en": [
+              "Training loss alone",
+              "Number of features",
+              "Runtime only",
+              "Dataset size",
+              "Precision and recall"
+            ],
+            "ar": [
+              "خسارة التدريب فقط",
+              "عدد السمات",
+              "زمن التنفيذ فقط",
+              "حجم مجموعة البيانات",
+              "الإحكام والاستدعاء"
+            ],
+            "fr": [
+              "La perte d’entraînement seule",
+              "Le nombre de variables",
+              "Le temps d’exécution uniquement",
+              "La taille du jeu de données",
+              "La précision et le rappel"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "hml03",
+          "question": {
+            "en": "A model has low training error and high validation error. What is the likely issue?",
+            "ar": "لدى النموذج خطأ تدريب منخفض وخطأ تحقق مرتفع. ما المشكلة المحتملة؟",
+            "fr": "Un modèle a une faible erreur d’entraînement et une forte erreur de validation. Quel est le problème probable ?"
+          },
+          "options": {
+            "en": [
+              "Underfitting",
+              "Overfitting",
+              "Label encoding",
+              "Feature scaling only",
+              "Random sampling"
+            ],
+            "ar": [
+              "نقص التخصيص",
+              "فرط التخصيص",
+              "ترميز التسميات",
+              "تحجيم السمات فقط",
+              "أخذ عينات عشوائي"
+            ],
+            "fr": [
+              "Le sous-apprentissage",
+              "Le surapprentissage",
+              "L’encodage des étiquettes",
+              "La normalisation seule",
+              "L’échantillonnage aléatoire"
+            ]
+          },
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "deep_learning",
+      "name": {
+        "en": "Deep Learning",
+        "ar": "التعلم العميق",
+        "fr": "Apprentissage profond"
+      },
+      "questions": [
+        {
+          "id": "dl_01",
+          "question": {
+            "en": "Why are residual connections useful in very deep neural networks?",
+            "ar": "لماذا تكون الوصلات المتبقية مفيدة في الشبكات العصبية العميقة جدًا؟",
+            "fr": "Pourquoi les connexions résiduelles sont-elles utiles dans les réseaux neuronaux très profonds ?"
+          },
+          "options": {
+            "en": [
+              "They prevent all overfitting",
+              "They provide paths that help gradients propagate through many layers",
+              "They eliminate the need for activation functions",
+              "They make backpropagation unnecessary",
+              "They ensure every layer has identical weights"
+            ],
+            "ar": [
+              "تمنع كل فرط تكيّف",
+              "توفر مسارات تساعد التدرجات على الانتشار عبر طبقات كثيرة",
+              "تلغي الحاجة إلى دوال التنشيط",
+              "تجعل الانتشار العكسي غير ضروري",
+              "تضمن تطابق أوزان كل الطبقات"
+            ],
+            "fr": [
+              "Elles empêchent tout surapprentissage",
+              "Elles offrent des chemins qui facilitent la propagation des gradients à travers de nombreuses couches",
+              "Elles éliminent le besoin de fonctions d’activation",
+              "Elles rendent la rétropropagation inutile",
+              "Elles garantissent des poids identiques dans chaque couche"
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "dl_02",
+          "question": {
+            "en": "In scaled dot-product attention, why divide query-key dot products by the square root of key dimension?",
+            "ar": "في الانتباه بجداء النقاط المقيس، لماذا تُقسم جداءات الاستعلام والمفتاح على الجذر التربيعي لبعد المفتاح؟",
+            "fr": "Dans l’attention à produit scalaire mis à l’échelle, pourquoi diviser les produits requête-clé par la racine carrée de la dimension des clés ?"
+          },
+          "options": {
+            "en": [
+              "To ensure queries and keys are integers",
+              "To reduce sequence length",
+              "To remove positional information",
+              "To keep softmax inputs from growing too large and saturating",
+              "To make attention weights sum to more than one"
+            ],
+            "ar": [
+              "لضمان أن تكون الاستعلامات والمفاتيح أعدادًا صحيحة",
+              "لتقليل طول التسلسل",
+              "لإزالة المعلومات الموضعية",
+              "لمنع مدخلات softmax من التضخم والتشبع",
+              "لجعل مجموع أوزان الانتباه أكبر من واحد"
+            ],
+            "fr": [
+              "Pour garantir que requêtes et clés soient des entiers",
+              "Pour réduire la longueur de séquence",
+              "Pour supprimer l’information positionnelle",
+              "Pour éviter que les entrées du softmax deviennent trop grandes et saturent",
+              "Pour que la somme des poids d’attention dépasse un"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "dl_03",
+          "question": {
+            "en": "What does teacher forcing do when training an autoregressive sequence model?",
+            "ar": "ماذا يفعل أسلوب إجبار المعلم عند تدريب نموذج تسلسلي ذاتي الانحدار؟",
+            "fr": "Que fait le teacher forcing lors de l’entraînement d’un modèle séquentiel autorégressif ?"
+          },
+          "options": {
+            "en": [
+              "Feeds the true previous token as input during training",
+              "Uses only model-generated tokens at every training step",
+              "Forces all gradients to be zero",
+              "Replaces the optimizer with a teacher network",
+              "Trains without target sequences"
+            ],
+            "ar": [
+              "يمرر الرمز السابق الصحيح كمدخل أثناء التدريب",
+              "يستخدم الرموز التي يولدها النموذج فقط في كل خطوة تدريب",
+              "يجعل جميع التدرجات صفرًا",
+              "يستبدل المحسّن بشبكة معلم",
+              "يدرّب دون تسلسلات هدف"
+            ],
+            "fr": [
+              "Fournit le vrai jeton précédent en entrée pendant l’entraînement",
+              "Utilise uniquement les jetons générés par le modèle à chaque étape",
+              "Force tous les gradients à zéro",
+              "Remplace l’optimiseur par un réseau enseignant",
+              "Entraîne sans séquences cibles"
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "dl_04",
+          "question": {
+            "en": "What is the main purpose of dropout during neural network training?",
+            "ar": "ما الغرض الأساسي من الإسقاط العشوائي أثناء تدريب الشبكة العصبية؟",
+            "fr": "Quel est l’objectif principal du dropout pendant l’entraînement d’un réseau neuronal ?"
+          },
+          "options": {
+            "en": [
+              "Increase the number of training labels",
+              "Normalize input data to zero mean",
+              "Replace gradient descent",
+              "Guarantee deterministic predictions during training",
+              "Randomly deactivate units to reduce co-adaptation and overfitting"
+            ],
+            "ar": [
+              "زيادة عدد تسميات التدريب",
+              "تطبيع المدخلات إلى متوسط صفري",
+              "استبدال الانحدار المتدرج",
+              "ضمان تنبؤات حتمية أثناء التدريب",
+              "تعطيل وحدات عشوائيًا لتقليل الاعتماد المتبادل وفرط التكيّف"
+            ],
+            "fr": [
+              "Augmenter le nombre d’étiquettes d’entraînement",
+              "Centrer les entrées sur une moyenne nulle",
+              "Remplacer la descente de gradient",
+              "Garantir des prédictions déterministes pendant l’entraînement",
+              "Désactiver aléatoirement des unités pour réduire la coadaptation et le surapprentissage"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "dl_05",
+          "question": {
+            "en": "Why can mixed-precision training reduce memory use while retaining stable updates?",
+            "ar": "كيف يمكن للتدريب بدقة مختلطة تقليل الذاكرة مع الحفاظ على تحديثات مستقرة؟",
+            "fr": "Comment l’entraînement en précision mixte peut-il réduire la mémoire tout en conservant des mises à jour stables ?"
+          },
+          "options": {
+            "en": [
+              "It stores all activations as 64-bit values",
+              "It reduces the batch size to one automatically",
+              "It uses lower precision for many operations and higher precision where needed, often with loss scaling",
+              "It skips backpropagation",
+              "It removes the loss function"
+            ],
+            "ar": [
+              "يخزن كل التنشيطات بقيم 64 بت",
+              "يخفض حجم الدفعة تلقائيًا إلى واحد",
+              "يستخدم دقة أقل في عمليات كثيرة ودقة أعلى عند الحاجة، غالبًا مع تحجيم الخسارة",
+              "يتجاوز الانتشار العكسي",
+              "يحذف دالة الخسارة"
+            ],
+            "fr": [
+              "Elle stocke toutes les activations en 64 bits",
+              "Elle réduit automatiquement la taille du lot à un",
+              "Elle utilise une précision plus faible pour de nombreuses opérations et plus élevée lorsque nécessaire, souvent avec mise à l’échelle de la perte",
+              "Elle ignore la rétropropagation",
+              "Elle supprime la fonction de perte"
+            ]
+          },
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "data_analytics",
+      "name": {
+        "en": "Data Analytics",
+        "ar": "تحليلات البيانات",
+        "fr": "Analyse de données"
+      },
+      "questions": [
+        {
+          "id": "da_02",
+          "question": {
+            "en": "In an A/B test, the 95% confidence interval for the difference in conversion rates is [-0.4, 2.1] percentage points. What can be concluded at the 5% significance level?",
+            "ar": "في اختبار A/B، مجال الثقة 95% لفرق معدلي التحويل هو [-0.4، 2.1] نقطة مئوية. ما الاستنتاج عند مستوى دلالة 5%؟",
+            "fr": "Dans un test A/B, l’intervalle de confiance à 95 % de la différence des taux de conversion est [-0,4 ; 2,1] points. Quelle conclusion au seuil de 5 % ?"
+          },
+          "options": {
+            "en": [
+              "The effect is exactly zero",
+              "Variant B is certainly better",
+              "Variant A is certainly better",
+              "The interval includes zero, so the difference is not statistically significant",
+              "The sample has no variance"
+            ],
+            "ar": [
+              "الأثر يساوي صفرًا تمامًا",
+              "النسخة B أفضل بالتأكيد",
+              "النسخة A أفضل بالتأكيد",
+              "يشمل المجال الصفر، لذا فالفرق غير دال إحصائيًا",
+              "لا يوجد تباين في العينة"
+            ],
+            "fr": [
+              "L’effet est exactement nul",
+              "La variante B est certainement meilleure",
+              "La variante A est certainement meilleure",
+              "L’intervalle contient zéro, la différence n’est donc pas statistiquement significative",
+              "L’échantillon n’a aucune variance"
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "da_03",
+          "question": {
+            "en": "When aggregating daily data into monthly totals, which issue can cause incorrect results if rows overlap across dates?",
+            "ar": "عند تجميع البيانات اليومية إلى إجماليات شهرية، ما المشكلة التي قد تسبب نتائج خاطئة إذا تداخلت الصفوف بين التواريخ؟",
+            "fr": "Lors de l’agrégation de données quotidiennes en totaux mensuels, quel problème peut fausser les résultats si des lignes se chevauchent entre dates ?"
+          },
+          "options": {
+            "en": [
+              "Overfitting a model",
+              "Changing the median into a mean",
+              "Double counting records",
+              "Removing seasonality",
+              "Increasing statistical power"
+            ],
+            "ar": [
+              "فرط تكيّف نموذج",
+              "تحويل الوسيط إلى متوسط",
+              "احتساب السجلات مرتين",
+              "إزالة الموسمية",
+              "زيادة القوة الإحصائية"
+            ],
+            "fr": [
+              "Le surapprentissage d’un modèle",
+              "Transformer la médiane en moyenne",
+              "Le double comptage des enregistrements",
+              "Supprimer la saisonnalité",
+              "Augmenter la puissance statistique"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "hda01",
+          "question": {
+            "en": "A 20% rise in a metric follows a change to the tracking system. What should be checked first?",
+            "ar": "ارتفع مقياس بنسبة 20٪ بعد تغيير نظام التتبع. ما الذي ينبغي فحصه أولًا؟",
+            "fr": "Une mesure augmente de 20 % après un changement du suivi. Que faut-il vérifier en premier ?"
+          },
+          "options": {
+            "en": [
+              "Whether the chart uses blue",
+              "Whether the title is shorter",
+              "Whether the file is compressed",
+              "Whether the rows are alphabetical",
+              "Whether the measurement definition or collection changed"
+            ],
+            "ar": [
+              "ما إذا كان الرسم أزرق",
+              "ما إذا كان العنوان أقصر",
+              "ما إذا كان الملف مضغوطًا",
+              "ما إذا كانت الصفوف مرتبة أبجديًا",
+              "ما إذا كان تعريف القياس أو جمعه قد تغير"
+            ],
+            "fr": [
+              "Si le graphique est bleu",
+              "Si le titre est plus court",
+              "Si le fichier est compressé",
+              "Si les lignes sont alphabétiques",
+              "Si la définition ou la collecte de la mesure a changé"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "hda02",
+          "question": {
+            "en": "A correlation between two variables is observed. What does it establish by itself?",
+            "ar": "لوحظ ارتباط بين متغيرين. ماذا يثبت هذا الارتباط وحده؟",
+            "fr": "Une corrélation est observée entre deux variables. Que démontre-t-elle à elle seule ?"
+          },
+          "options": {
+            "en": [
+              "That one variable causes the other",
+              "That both variables are error-free",
+              "Association, not necessarily causation",
+              "That the sample is unbiased",
+              "That the relationship is linear"
+            ],
+            "ar": [
+              "أن أحد المتغيرين يسبب الآخر",
+              "أن المتغيرين خاليان من الخطأ",
+              "وجود علاقة، وليس بالضرورة سببية",
+              "أن العينة غير متحيزة",
+              "أن العلاقة خطية"
+            ],
+            "fr": [
+              "Qu’une variable cause l’autre",
+              "Que les deux variables sont sans erreur",
+              "Une association, pas nécessairement une causalité",
+              "Que l’échantillon est sans biais",
+              "Que la relation est linéaire"
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "hda03",
+          "question": {
+            "en": "A few extreme values pull the mean upward. Which statistic is more resistant?",
+            "ar": "تسحب بعض القيم المتطرفة المتوسط إلى الأعلى. أي مقياس أكثر مقاومة؟",
+            "fr": "Quelques valeurs extrêmes tirent la moyenne vers le haut. Quelle statistique y résiste mieux ?"
+          },
+          "options": {
+            "en": [
+              "Median",
+              "Maximum",
+              "Range",
+              "Sum",
+              "Variance"
+            ],
+            "ar": [
+              "الوسيط",
+              "القيمة القصوى",
+              "المدى",
+              "المجموع",
+              "التباين"
+            ],
+            "fr": [
+              "La médiane",
+              "Le maximum",
+              "L’étendue",
+              "La somme",
+              "La variance"
+            ]
+          },
+          "correct": 0
+        }
+      ]
+    }
+  ]
+}
