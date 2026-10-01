@@ -1,0 +1,108 @@
+.transition-page {
+	min-height: 100svh;
+	overflow: hidden;
+}
+
+.transition-page .site-header {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 5;
+	transform: translateX(-50%);
+}
+
+.handoff-screen {
+	position: relative;
+	display: grid;
+	width: 100%;
+	min-height: 100svh;
+	margin: 0;
+	padding: 120px 24px 48px;
+	place-items: center;
+	overflow: hidden;
+}
+
+.handoff-stars {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background-image:
+		radial-gradient(1.5px 1.5px at 12% 24%, rgba(255,255,255,.9) 98%, transparent),
+		radial-gradient(1px 1px at 37% 68%, rgba(179,220,255,.85) 98%, transparent),
+		radial-gradient(2px 2px at 72% 37%, rgba(255,232,168,.9) 98%, transparent),
+		radial-gradient(1px 1px at 88% 82%, rgba(255,255,255,.8) 98%, transparent);
+	background-size: 220px 190px, 270px 230px, 340px 280px, 190px 210px;
+	opacity: .65;
+}
+
+.handoff-copy {
+	position: relative;
+	z-index: 2;
+	width: min(760px, 100%);
+	text-align: center;
+}
+
+.handoff-copy .eyebrow { margin-bottom: 18px; }
+.handoff-copy h1 {
+	margin: 0 auto;
+	font-size: clamp(2rem, 6vw, 4.5rem);
+	line-height: 1.15;
+	text-shadow: 0 5px 30px rgba(0,0,0,.45);
+}
+.handoff-copy h1 span { color: var(--yellow); }
+.handoff-caption {
+	margin: 18px 0 0;
+	color: #c8d6f2;
+	font-size: clamp(.9rem, 2vw, 1.1rem);
+}
+
+.handoff-progress {
+	width: min(340px, 78vw);
+	height: 7px;
+	margin: 26px auto 0;
+	border: 1px solid rgba(130,176,255,.45);
+	border-radius: 999px;
+	background: rgba(10,16,48,.8);
+	box-shadow: 0 0 22px rgba(78,195,247,.13);
+	overflow: hidden;
+}
+.handoff-progress span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	background: linear-gradient(90deg, var(--cyan), #8b6ce8, var(--yellow));
+	transform: scaleX(0);
+	transform-origin: left center;
+	animation: handoff-progress 5s linear forwards;
+}
+
+.ejected-crew {
+	position: absolute;
+	top: 58%;
+	left: 0;
+	z-index: 1;
+	width: clamp(105px, 20vw, 190px);
+	height: auto;
+	filter: drop-shadow(0 14px 22px rgba(0,0,0,.45));
+	transform: translate3d(-150%, -50%, 0);
+	animation: crew-ejection 5s linear forwards;
+}
+
+@keyframes crew-ejection {
+	0% { transform: translate3d(-150%, -50%, 0) rotate(0turn); }
+	50%, 100% { transform: translate3d(calc(100vw + 150%), -50%, 0) rotate(-2turn); }
+}
+@keyframes handoff-progress {
+	to { transform: scaleX(1); }
+}
+
+@media (max-width: 640px) {
+	.transition-page .site-header { top: 0; }
+	.handoff-screen { padding: 110px 20px 36px; }
+	.ejected-crew { top: 62%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ejected-crew, .handoff-progress span { animation-duration: 1ms; }
+}

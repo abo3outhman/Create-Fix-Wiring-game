@@ -1,0 +1,960 @@
+{
+  "categories": [
+    {
+      "id": "it_role",
+      "name": {
+        "en": "IT Cell Role & Collaboration",
+        "ar": "دور خلية IT والتعاون",
+        "fr": "Rôle de la cellule IT et collaboration"
+      },
+      "questions": [
+        {
+          "id": "it_01",
+          "question": {
+            "en": "What is the main role of the IT Cell in a Data Science Club?",
+            "ar": "ما هو الدور الرئيسي لخلية تكنولوجيا المعلومات (IT) في نادي علوم البيانات؟",
+            "fr": "Quel est le rôle principal de la cellule IT dans un club de Data Science ?"
+          },
+          "options": {
+            "en": [
+              "Manage the club's social media",
+              "Handle sponsorships and partnerships",
+              "Organize all club logistics",
+              "Control the club's budget and approve its expenses.",
+              "Develop technical knowledge, train members, mentor students, and support technical projects"
+            ],
+            "ar": [
+              "إدارة وسائل التواصل الاجتماعي للنادي",
+              "التعامل مع الرعايات والشراكات",
+              "تنظيم جميع الجوانب اللوجستية للنادي",
+              "إدارة ميزانية النادي والموافقة على نفقاته.",
+              "تطوير المعرفة التقنية وتدريب الأعضاء وتوجيه الطلاب ودعم المشاريع التقنية"
+            ],
+            "fr": [
+              "Gérer les réseaux sociaux du club",
+              "S'occuper des sponsorings et des partenariats",
+              "Organiser toute la logistique du club",
+              "Gérer le budget du club et approuver ses dépenses.",
+              "Développer les connaissances techniques, former les membres, encadrer les étudiants et soutenir les projets techniques"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "it_02",
+          "question": {
+            "en": "Which behavior best represents a good IT Cell member?",
+            "ar": "ما السلوك الذي يمثل عضو خلية IT الجيد على أفضل وجه؟",
+            "fr": "Quel comportement représente le mieux un bon membre de la cellule IT ?"
+          },
+          "options": {
+            "en": [
+              "Learning continuously, sharing knowledge, helping others, and contributing to technical projects",
+              "Knowing everything already",
+              "Only working when assigned a task",
+              "Focusing only on their own projects",
+              "Avoid asking questions so you never seem inexperienced."
+            ],
+            "ar": [
+              "التعلم المستمر ومشاركة المعرفة ومساعدة الآخرين والمساهمة في المشاريع التقنية",
+              "معرفة كل شيء مسبقاً",
+              "العمل فقط عند تكليفه بمهمة",
+              "التركيز على مشاريعه الخاصة فقط",
+              "تجنب طرح الأسئلة حتى لا تبدو قليل الخبرة."
+            ],
+            "fr": [
+              "Apprendre continuellement, partager ses connaissances, aider les autres et contribuer aux projets techniques",
+              "Tout savoir déjà",
+              "Ne travailler que lorsqu'une tâche lui est assignée",
+              "Se concentrer uniquement sur ses propres projets",
+              "Éviter de poser des questions pour ne jamais paraître inexpérimenté."
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "it_03",
+          "question": {
+            "en": "Which statement best describes the relationship between IT and Communication?",
+            "ar": "أي عبارة تصف العلاقة بين IT والتواصل على أفضل وجه؟",
+            "fr": "Quelle affirmation décrit le mieux la relation entre l'IT et la Communication ?"
+          },
+          "options": {
+            "en": [
+              "IT does all the communication work",
+              "Communication decides whether technical information is correct",
+              "The two cells should work completely independently",
+              "IT provides/validates technical content while Communication focuses on presenting and communicating it effectively",
+              "Communication should write the technical code and validate it without IT."
+            ],
+            "ar": [
+              "IT تقوم بكل عمل التواصل",
+              "فريق التواصل يقرر ما إذا كانت المعلومات التقنية صحيحة",
+              "يجب أن تعمل الخليتان بشكل مستقل تماماً",
+              "IT توفر/تتحقق من المحتوى التقني بينما يركز فريق التواصل على عرضه وإيصاله بفعالية",
+              "ينبغي لفريق التواصل كتابة الشيفرة التقنية والتحقق منها دون الرجوع إلى IT."
+            ],
+            "fr": [
+              "L'IT fait tout le travail de communication",
+              "La Communication décide si l'information technique est correcte",
+              "Les deux cellules doivent travailler de manière totalement indépendante",
+              "L'IT fournit/valide le contenu technique tandis que la Communication se concentre sur sa présentation et sa diffusion efficaces",
+              "La Communication devrait écrire le code technique et le valider sans consulter l'IT."
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "it_04",
+          "question": {
+            "en": "Communication wants to publish a post explaining Machine Learning. What should the IT member do?",
+            "ar": "يريد فريق التواصل نشر منشور يشرح التعلم الآلي. ماذا يجب أن يفعل عضو IT؟",
+            "fr": "L'équipe Communication veut publier un post expliquant le Machine Learning. Que doit faire le membre IT ?"
+          },
+          "options": {
+            "en": [
+              "Design the post themselves",
+              "Verify that the technical information is accurate and understandable",
+              "Ignore it because it's Communication's responsibility",
+              "Rewrite the entire post without consulting Communication",
+              "Publish it quickly and correct errors only if someone complains."
+            ],
+            "ar": [
+              "تصميم المنشور بنفسه",
+              "التحقق من أن المعلومات التقنية دقيقة ومفهومة",
+              "تجاهله لأنه مسؤولية فريق التواصل",
+              "إعادة كتابة المنشور بالكامل دون استشارة فريق التواصل",
+              "نشره بسرعة وتصحيح الأخطاء فقط إذا اشتكى أحد."
+            ],
+            "fr": [
+              "Concevoir lui-même le post",
+              "Vérifier que les informations techniques sont exactes et compréhensibles",
+              "L'ignorer car c'est la responsabilité de la Communication",
+              "Réécrire entièrement le post sans consulter la Communication",
+              "Le publier rapidement et ne corriger les erreurs que si quelqu'un se plaint."
+            ]
+          },
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "training",
+      "name": {
+        "en": "Training & Workshops",
+        "ar": "التدريب وورش العمل",
+        "fr": "Formations et ateliers"
+      },
+      "questions": [
+        {
+          "id": "tr_01",
+          "question": {
+            "en": "Before organizing a technical training, what should you do first?",
+            "ar": "قبل تنظيم تدريب تقني، ما الذي يجب فعله أولاً؟",
+            "fr": "Avant d'organiser une formation technique, que faut-il faire en premier ?"
+          },
+          "options": {
+            "en": [
+              "Design the Instagram post",
+              "Choose the room decoration",
+              "Define the learning objectives, target audience, prerequisites, and content",
+              "Ask participants what certificates they want",
+              "Choose the trainer first and let them decide the goals, audience, and content alone."
+            ],
+            "ar": [
+              "تصميم منشور إنستغرام",
+              "اختيار ديكور القاعة",
+              "تحديد الأهداف التعليمية والجمهور المستهدف والمتطلبات المسبقة والمحتوى",
+              "سؤال المشاركين عن الشهادات التي يريدونها",
+              "اختيار المدرب أولاً وتركه يحدد الأهداف والجمهور والمحتوى بمفرده."
+            ],
+            "fr": [
+              "Concevoir le post Instagram",
+              "Choisir la décoration de la salle",
+              "Définir les objectifs pédagogiques, le public cible, les prérequis et le contenu",
+              "Demander aux participants quels certificats ils veulent",
+              "Choisir d'abord le formateur et le laisser définir seul les objectifs, le public et le contenu."
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "tr_02",
+          "question": {
+            "en": "What information should a fiche technique for a workshop contain?",
+            "ar": "ما المعلومات التي يجب أن تتضمنها البطاقة التقنية (fiche technique) لورشة عمل؟",
+            "fr": "Quelles informations une fiche technique d'atelier doit-elle contenir ?"
+          },
+          "options": {
+            "en": [
+              "Only the workshop title",
+              "Only the trainer's biography",
+              "Only the event schedule",
+              "List only the workshop date, location, and registration link.",
+              "Objectives, target audience, prerequisites, tools, topics, and technical requirements"
+            ],
+            "ar": [
+              "عنوان الورشة فقط",
+              "السيرة الذاتية للمدرب فقط",
+              "جدول الفعالية فقط",
+              "ذكر تاريخ الورشة ومكانها ورابط التسجيل فقط.",
+              "الأهداف والجمهور المستهدف والمتطلبات المسبقة والأدوات والمواضيع والمتطلبات التقنية"
+            ],
+            "fr": [
+              "Uniquement le titre de l'atelier",
+              "Uniquement la biographie du formateur",
+              "Uniquement le programme de l'événement",
+              "Indiquer uniquement la date, le lieu et le lien d'inscription à l'atelier.",
+              "Les objectifs, le public cible, les prérequis, les outils, les sujets et les exigences techniques"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "tr_03",
+          "question": {
+            "en": "Why are prerequisites important in a technical workshop?",
+            "ar": "لماذا تُعد المتطلبات المسبقة مهمة في ورشة عمل تقنية؟",
+            "fr": "Pourquoi les prérequis sont-ils importants dans un atelier technique ?"
+          },
+          "options": {
+            "en": [
+              "To ensure participants have the necessary knowledge and tools to follow the session",
+              "To make the workshop look more advanced",
+              "To prevent beginners from participating",
+              "They are not important",
+              "To limit the workshop to advanced members only."
+            ],
+            "ar": [
+              "لضمان أن المشاركين يملكون المعرفة والأدوات اللازمة لمتابعة الجلسة",
+              "لجعل الورشة تبدو أكثر تقدماً",
+              "لمنع المبتدئين من المشاركة",
+              "ليست مهمة",
+              "لقصر الورشة على الأعضاء المتقدمين فقط."
+            ],
+            "fr": [
+              "Pour s'assurer que les participants ont les connaissances et les outils nécessaires pour suivre la session",
+              "Pour que l'atelier paraisse plus avancé",
+              "Pour empêcher les débutants de participer",
+              "Ils ne sont pas importants",
+              "Pour réserver l'atelier uniquement aux membres avancés."
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "tr_04",
+          "question": {
+            "en": "You have to teach Python to complete beginners. Which approach is most appropriate?",
+            "ar": "عليك تعليم بايثون لمبتدئين تماماً. ما هو النهج الأنسب؟",
+            "fr": "Vous devez enseigner Python à des débutants complets. Quelle approche est la plus appropriée ?"
+          },
+          "options": {
+            "en": [
+              "Start directly with Machine Learning",
+              "Give them a 100-page documentation and let them learn alone",
+              "Skip the basics because they can learn them later",
+              "Start with fundamentals and progressively introduce practical exercises",
+              "Ask them to memorize syntax before writing any code."
+            ],
+            "ar": [
+              "البدء مباشرة بالتعلم الآلي",
+              "إعطاؤهم وثائق من 100 صفحة وتركهم يتعلمون وحدهم",
+              "تخطي الأساسيات لأنهم يستطيعون تعلمها لاحقاً",
+              "البدء بالأساسيات وإدخال التمارين العملية تدريجياً",
+              "مطالبتهم بحفظ قواعد كتابة الشيفرة قبل كتابة أي برنامج."
+            ],
+            "fr": [
+              "Commencer directement par le Machine Learning",
+              "Leur donner une documentation de 100 pages et les laisser apprendre seuls",
+              "Sauter les bases car ils pourront les apprendre plus tard",
+              "Commencer par les fondamentaux et introduire progressivement des exercices pratiques",
+              "Leur demander de mémoriser la syntaxe avant d'écrire du code."
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "tr_05",
+          "question": {
+            "en": "You are asked to teach a technology you don't know. What is the best approach?",
+            "ar": "طُلب منك تدريس تقنية لا تعرفها. ما هو أفضل نهج؟",
+            "fr": "On vous demande d'enseigner une technologie que vous ne connaissez pas. Quelle est la meilleure approche ?"
+          },
+          "options": {
+            "en": [
+              "Pretend you know it",
+              "Learn the necessary concepts, test them yourself, and prepare before teaching",
+              "Refuse immediately",
+              "Ask students to teach you during the session",
+              "Pick the first online tutorial and teach it without trying it yourself."
+            ],
+            "ar": [
+              "التظاهر بمعرفتها",
+              "تعلم المفاهيم اللازمة وتجربتها بنفسك والتحضير قبل التدريس",
+              "الرفض فوراً",
+              "مطالبة الطلاب بتعليمك أثناء الجلسة",
+              "اختيار أول درس على الإنترنت وشرحه دون تجربته بنفسك."
+            ],
+            "fr": [
+              "Faire semblant de la connaître",
+              "Apprendre les concepts nécessaires, les tester soi-même et se préparer avant d'enseigner",
+              "Refuser immédiatement",
+              "Demander aux étudiants de vous l'apprendre pendant la session",
+              "Choisir le premier tutoriel en ligne et l'enseigner sans l'avoir essayé soi-même."
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "tr_06",
+          "question": {
+            "en": "What should an IT member do when they don't know the answer to a student's technical question?",
+            "ar": "ماذا يجب أن يفعل عضو IT عندما لا يعرف إجابة سؤال تقني من طالب؟",
+            "fr": "Que doit faire un membre IT lorsqu'il ne connaît pas la réponse à une question technique d'un étudiant ?"
+          },
+          "options": {
+            "en": [
+              "Invent an answer",
+              "Ignore the question",
+              "Tell the student they should already know it",
+              "Give a confident guess even when you are unsure of the information.",
+              "Be honest, investigate the answer, and come back with reliable information"
+            ],
+            "ar": [
+              "اختلاق إجابة",
+              "تجاهل السؤال",
+              "إخبار الطالب بأنه كان يجب أن يعرفها مسبقاً",
+              "تقديم تخمين بثقة حتى عندما لا تكون متأكداً من المعلومة.",
+              "أن يكون صادقاً ويبحث عن الإجابة ويعود بمعلومات موثوقة"
+            ],
+            "fr": [
+              "Inventer une réponse",
+              "Ignorer la question",
+              "Dire à l'étudiant qu'il devrait déjà le savoir",
+              "Donner une réponse au hasard avec assurance même si l'information n'est pas certaine.",
+              "Être honnête, chercher la réponse et revenir avec des informations fiables"
+            ]
+          },
+          "correct": 4
+        }
+      ]
+    },
+    {
+      "id": "mentoring",
+      "name": {
+        "en": "Mentoring",
+        "ar": "الإرشاد",
+        "fr": "Mentorat"
+      },
+      "questions": [
+        {
+          "id": "mt_01",
+          "question": {
+            "en": "A student asks you to fix their entire project because they are stuck. What should a mentor do?",
+            "ar": "يطلب منك طالب إصلاح مشروعه بالكامل لأنه عالق. ماذا يجب أن يفعل المرشد؟",
+            "fr": "Un étudiant vous demande de corriger tout son projet parce qu'il est bloqué. Que doit faire un mentor ?"
+          },
+          "options": {
+            "en": [
+              "Complete the project for them",
+              "Give them the final code immediately",
+              "Identify where they are stuck, explain the concept, and guide them toward a solution",
+              "Tell them to search Google themselves",
+              "Point out the mistakes without explaining how to fix or learn from them."
+            ],
+            "ar": [
+              "إكمال المشروع بدلاً منه",
+              "إعطاؤه الكود النهائي فوراً",
+              "تحديد موضع تعثره، وشرح المفهوم، وتوجيهه نحو الحل",
+              "إخباره بأن يبحث في غوغل بنفسه",
+              "الإشارة إلى الأخطاء دون شرح كيفية إصلاحها أو التعلم منها."
+            ],
+            "fr": [
+              "Terminer le projet à sa place",
+              "Lui donner immédiatement le code final",
+              "Identifier où il est bloqué, expliquer le concept et le guider vers une solution",
+              "Lui dire de chercher lui-même sur Google",
+              "Signaler les erreurs sans expliquer comment les corriger ni en tirer des leçons."
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "mt_02",
+          "question": {
+            "en": "A student has copied a complete project from ChatGPT but cannot explain it. What is the best mentoring approach?",
+            "ar": "نسخ طالب مشروعاً كاملاً من ChatGPT لكنه لا يستطيع شرحه. ما هو أفضل نهج للإرشاد؟",
+            "fr": "Un étudiant a copié un projet complet depuis ChatGPT mais ne peut pas l'expliquer. Quelle est la meilleure approche de mentorat ?"
+          },
+          "options": {
+            "en": [
+              "Ask them to explain their code and guide them to understand/rebuild the parts they don't understand",
+              "Accept it because the project works",
+              "Ask them to submit another AI-generated project",
+              "Reject them immediately without discussion",
+              "Delete the project and ask them to start again without discussing what they learned."
+            ],
+            "ar": [
+              "مطالبته بشرح الكود الخاص به وتوجيهه لفهم/إعادة بناء الأجزاء التي لا يفهمها",
+              "قبوله لأن المشروع يعمل",
+              "مطالبته بتقديم مشروع آخر مولّد بالذكاء الاصطناعي",
+              "رفضه فوراً دون نقاش",
+              "حذف المشروع ومطالبته بالبدء من جديد دون مناقشة ما تعلمه."
+            ],
+            "fr": [
+              "Lui demander d'expliquer son code et le guider pour comprendre/reconstruire les parties qu'il ne comprend pas",
+              "L'accepter car le projet fonctionne",
+              "Lui demander de soumettre un autre projet généré par IA",
+              "Le rejeter immédiatement sans discussion",
+              "Supprimer le projet et lui demander de recommencer sans discuter de ses apprentissages."
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "mt_03",
+          "question": {
+            "en": "How can experienced students contribute to the development of beginners?",
+            "ar": "كيف يمكن للطلاب ذوي الخبرة المساهمة في تطوير المبتدئين؟",
+            "fr": "Comment les étudiants expérimentés peuvent-ils contribuer au développement des débutants ?"
+          },
+          "options": {
+            "en": [
+              "They should keep their knowledge to themselves",
+              "They should only participate in competitions",
+              "They should replace the IT Cell",
+              "Leave beginners to make every decision without any guidance.",
+              "They can become peer mentors, help with workshops, review projects, or lead study groups"
+            ],
+            "ar": [
+              "عليهم الاحتفاظ بمعرفتهم لأنفسهم",
+              "عليهم المشاركة في المسابقات فقط",
+              "عليهم أن يحلّوا محل خلية IT",
+              "ترك المبتدئين يتخذون كل القرارات دون أي توجيه.",
+              "يمكنهم أن يصبحوا مرشدين أقران ويساعدوا في ورش العمل ويراجعوا المشاريع أو يقودوا مجموعات الدراسة"
+            ],
+            "fr": [
+              "Ils doivent garder leurs connaissances pour eux",
+              "Ils ne doivent participer qu'aux compétitions",
+              "Ils doivent remplacer la cellule IT",
+              "Laisser les débutants prendre toutes les décisions sans aucun accompagnement.",
+              "Ils peuvent devenir des mentors pairs, aider lors des ateliers, relire des projets ou animer des groupes d'étude"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "mt_04",
+          "question": {
+            "en": "What is the benefit of creating study groups within the club?",
+            "ar": "ما فائدة إنشاء مجموعات دراسة داخل النادي؟",
+            "fr": "Quel est l'avantage de créer des groupes d'étude au sein du club ?"
+          },
+          "options": {
+            "en": [
+              "Students can divide the work and avoid learning",
+              "It eliminates the need for trainers",
+              "It is mainly useful for socializing",
+              "Students can learn collaboratively, explain concepts to each other, and stay motivated",
+              "Guarantee that every member will learn at exactly the same pace."
+            ],
+            "ar": [
+              "يمكن للطلاب تقسيم العمل وتجنب التعلم",
+              "إنها تلغي الحاجة إلى المدربين",
+              "إنها مفيدة أساساً للتعارف الاجتماعي",
+              "يمكن للطلاب التعلم بشكل تعاوني وشرح المفاهيم لبعضهم وبقاء دافعيتهم",
+              "ضمان أن جميع الأعضاء سيتعلمون بالسرعة نفسها تماماً."
+            ],
+            "fr": [
+              "Les étudiants peuvent se répartir le travail et éviter d'apprendre",
+              "Cela supprime le besoin de formateurs",
+              "C'est surtout utile pour socialiser",
+              "Les étudiants peuvent apprendre en collaboration, s'expliquer les concepts entre eux et rester motivés",
+              "Garantir que tous les membres apprendront exactement au même rythme."
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "mt_05",
+          "question": {
+            "en": "You have limited IT members but many students need mentoring. What could you do?",
+            "ar": "لديك عدد محدود من أعضاء IT لكن كثيراً من الطلاب يحتاجون إلى إرشاد. ماذا يمكنك أن تفعل؟",
+            "fr": "Vous avez peu de membres IT mais beaucoup d'étudiants ont besoin de mentorat. Que pourriez-vous faire ?"
+          },
+          "options": {
+            "en": [
+              "Stop mentoring",
+              "Build a peer-mentoring system where trained students help newer students under IT supervision",
+              "Ask IT members to individually mentor everyone",
+              "Only help the best students",
+              "Stop mentoring until more IT members join the team."
+            ],
+            "ar": [
+              "إيقاف الإرشاد",
+              "بناء نظام إرشاد بين الأقران يساعد فيه الطلاب المدرَّبون الطلاب الجدد تحت إشراف IT",
+              "مطالبة أعضاء IT بإرشاد الجميع فردياً",
+              "مساعدة أفضل الطلاب فقط",
+              "إيقاف التوجيه إلى أن ينضم مزيد من أعضاء IT إلى الفريق."
+            ],
+            "fr": [
+              "Arrêter le mentorat",
+              "Mettre en place un système de mentorat entre pairs où des étudiants formés aident les nouveaux sous la supervision de l'IT",
+              "Demander aux membres IT de mentorer chacun individuellement",
+              "N'aider que les meilleurs étudiants",
+              "Arrêter le mentorat jusqu'à ce que d'autres membres rejoignent l'équipe IT."
+            ]
+          },
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "ds_practice",
+      "name": {
+        "en": "Data Science Practice",
+        "ar": "ممارسة علوم البيانات",
+        "fr": "Pratique de la Data Science"
+      },
+      "questions": [
+        {
+          "id": "ds_01",
+          "question": {
+            "en": "A student says: “My ML model has 95% accuracy, so it is definitely good.” What should you do?",
+            "ar": "يقول طالب: «نموذج التعلم الآلي لديّ دقته 95٪، إذن هو جيد بالتأكيد». ماذا يجب أن تفعل؟",
+            "fr": "Un étudiant dit : « Mon modèle de ML a 95 % de précision, donc il est forcément bon. » Que devez-vous faire ?"
+          },
+          "options": {
+            "en": [
+              "Ask them to evaluate other relevant metrics and check the data/problem context",
+              "Agree immediately",
+              "Tell them accuracy is never useful",
+              "Ask them to increase the accuracy to 100%",
+              "Rely only on training accuracy without checking the data or other metrics."
+            ],
+            "ar": [
+              "مطالبته بتقييم مقاييس أخرى ذات صلة والتحقق من البيانات وسياق المشكلة",
+              "الموافقة فوراً",
+              "إخباره بأن الدقة ليست مفيدة أبداً",
+              "مطالبته برفع الدقة إلى 100٪",
+              "الاعتماد على دقة بيانات التدريب فقط دون فحص البيانات أو المقاييس الأخرى."
+            ],
+            "fr": [
+              "Lui demander d'évaluer d'autres métriques pertinentes et de vérifier les données et le contexte du problème",
+              "Être immédiatement d'accord",
+              "Lui dire que la précision n'est jamais utile",
+              "Lui demander d'augmenter la précision à 100 %",
+              "Se fier uniquement à la précision sur l'entraînement sans examiner les données ni d'autres métriques."
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "ds_02",
+          "question": {
+            "en": "Why is Git/GitHub useful for the IT Cell?",
+            "ar": "لماذا يُعد Git/GitHub مفيداً لخلية IT؟",
+            "fr": "Pourquoi Git/GitHub est-il utile pour la cellule IT ?"
+          },
+          "options": {
+            "en": [
+              "It replaces Python",
+              "It is only useful for graphic designers",
+              "It automatically creates ML models",
+              "It allows teams to collaborate, track changes, and manage technical projects",
+              "It automatically guarantees that the code has no bugs."
+            ],
+            "ar": [
+              "لأنه يحل محل بايثون",
+              "لأنه مفيد فقط لمصممي الغرافيك",
+              "لأنه ينشئ نماذج التعلم الآلي تلقائياً",
+              "لأنه يتيح للفرق التعاون وتتبع التغييرات وإدارة المشاريع التقنية",
+              "يضمن تلقائياً خلو الشيفرة من الأخطاء."
+            ],
+            "fr": [
+              "Il remplace Python",
+              "Il n'est utile que pour les graphistes",
+              "Il crée automatiquement des modèles de ML",
+              "Il permet aux équipes de collaborer, de suivre les modifications et de gérer les projets techniques",
+              "Il garantit automatiquement que le code ne contient aucun bogue."
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "ds_03",
+          "question": {
+            "en": "Your team is preparing a 3-day Data Science competition. Which task belongs most directly to IT?",
+            "ar": "يعدّ فريقك مسابقة لعلوم البيانات مدتها 3 أيام. ما المهمة التي تخص خلية IT بشكل مباشر أكثر؟",
+            "fr": "Votre équipe prépare une compétition de Data Science de 3 jours. Quelle tâche revient le plus directement à l'IT ?"
+          },
+          "options": {
+            "en": [
+              "Designing the event poster",
+              "Preparing the dataset, technical challenge, instructions, environment, and technical support",
+              "Contacting sponsors",
+              "Managing refreshments",
+              "Choose the refreshments and decorate the room."
+            ],
+            "ar": [
+              "تصميم ملصق الفعالية",
+              "إعداد مجموعة البيانات والتحدي التقني والتعليمات وبيئة العمل والدعم التقني",
+              "التواصل مع الرعاة",
+              "إدارة المرطبات",
+              "اختيار المرطبات وتزيين القاعة."
+            ],
+            "fr": [
+              "Concevoir l'affiche de l'événement",
+              "Préparer le dataset, le défi technique, les consignes, l'environnement et le support technique",
+              "Contacter les sponsors",
+              "Gérer les rafraîchissements",
+              "Choisir les rafraîchissements et décorer la salle."
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "ds_04",
+          "question": {
+            "en": "You notice that students are learning Machine Learning but don't have enough opportunities to practice. What would you propose?",
+            "ar": "تلاحظ أن الطلاب يتعلمون التعلم الآلي لكن لا تتوفر لديهم فرص كافية للتطبيق. ماذا ستقترح؟",
+            "fr": "Vous remarquez que les étudiants apprennent le Machine Learning mais n'ont pas assez d'occasions de pratiquer. Que proposeriez-vous ?"
+          },
+          "options": {
+            "en": [
+              "Another theoretical ML training",
+              "Tell students to practice at home",
+              "Wait for the next hackathon",
+              "Organize another theory lecture without any practical work.",
+              "A recurring project/challenge program where students solve real datasets and receive mentoring"
+            ],
+            "ar": [
+              "تدريباً نظرياً آخر في التعلم الآلي",
+              "إخبار الطلاب بأن يتدربوا في المنزل",
+              "انتظار الهاكاثون القادم",
+              "تنظيم محاضرة نظرية أخرى دون أي تطبيق عملي.",
+              "برنامج مشاريع/تحديات دوري يحل فيه الطلاب مجموعات بيانات حقيقية مع الإرشاد"
+            ],
+            "fr": [
+              "Une autre formation théorique en ML",
+              "Dire aux étudiants de pratiquer chez eux",
+              "Attendre le prochain hackathon",
+              "Organiser un autre cours théorique sans aucun exercice pratique.",
+              "Un programme récurrent de projets/défis où les étudiants résolvent des datasets réels avec un accompagnement"
+            ]
+          },
+          "correct": 4
+        }
+      ]
+    },
+    {
+      "id": "learning_culture",
+      "name": {
+        "en": "Learning Culture & Development",
+        "ar": "ثقافة التعلم والتطوير",
+        "fr": "Culture d'apprentissage et développement"
+      },
+      "questions": [
+        {
+          "id": "lc_01",
+          "question": {
+            "en": "How can IT help students who are interested in Data Science but don't know where to start?",
+            "ar": "كيف يمكن لخلية IT مساعدة الطلاب المهتمين بعلوم البيانات لكنهم لا يعرفون من أين يبدؤون؟",
+            "fr": "Comment l'IT peut-il aider les étudiants intéressés par la Data Science mais qui ne savent pas par où commencer ?"
+          },
+          "options": {
+            "en": [
+              "Give them advanced Machine Learning resources immediately",
+              "Tell them to learn everything independently",
+              "Provide a clear learning path with appropriate resources, projects, and guidance",
+              "Wait until they join a training",
+              "Give everyone the same advanced path regardless of their starting level."
+            ],
+            "ar": [
+              "إعطاؤهم موارد متقدمة في التعلم الآلي فوراً",
+              "إخبارهم بأن يتعلموا كل شيء بمفردهم",
+              "توفير مسار تعلم واضح مع موارد ومشاريع وإرشاد مناسب",
+              "الانتظار حتى ينضموا إلى تدريب",
+              "إعطاء الجميع مساراً متقدماً واحداً بغض النظر عن مستواهم عند البداية."
+            ],
+            "fr": [
+              "Leur donner immédiatement des ressources avancées de Machine Learning",
+              "Leur dire de tout apprendre seuls",
+              "Fournir un parcours d'apprentissage clair avec des ressources, des projets et un accompagnement adaptés",
+              "Attendre qu'ils rejoignent une formation",
+              "Proposer à tous le même parcours avancé, quel que soit leur niveau de départ."
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "lc_02",
+          "question": {
+            "en": "Which initiative would contribute most to creating a strong Data Science culture in a school?",
+            "ar": "أي مبادرة ستسهم أكثر في بناء ثقافة قوية لعلوم البيانات في المدرسة؟",
+            "fr": "Quelle initiative contribuerait le plus à créer une solide culture Data Science dans une école ?"
+          },
+          "options": {
+            "en": [
+              "One large workshop every year",
+              "Posting technical content once a month",
+              "Giving certificates to students",
+              "Focus on one competition and suspend all the other learning activities.",
+              "Continuous activities such as study groups, workshops, projects, challenges, mentoring, and peer learning"
+            ],
+            "ar": [
+              "ورشة كبيرة واحدة كل عام",
+              "نشر محتوى تقني مرة في الشهر",
+              "منح الطلاب شهادات",
+              "التركيز على مسابقة واحدة وإيقاف جميع أنشطة التعلم الأخرى.",
+              "أنشطة مستمرة مثل مجموعات الدراسة وورش العمل والمشاريع والتحديات والإرشاد والتعلم بين الأقران"
+            ],
+            "fr": [
+              "Un grand atelier une fois par an",
+              "Publier du contenu technique une fois par mois",
+              "Donner des certificats aux étudiants",
+              "Se concentrer sur une compétition et suspendre toutes les autres activités d'apprentissage.",
+              "Des activités continues telles que groupes d'étude, ateliers, projets, défis, mentorat et apprentissage entre pairs"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "lc_03",
+          "question": {
+            "en": "How can IT encourage students to learn outside formal training sessions?",
+            "ar": "كيف يمكن لخلية IT تشجيع الطلاب على التعلم خارج جلسات التدريب الرسمية؟",
+            "fr": "Comment l'IT peut-il encourager les étudiants à apprendre en dehors des sessions de formation formelles ?"
+          },
+          "options": {
+            "en": [
+              "Create project challenges, study groups, reading resources, coding sessions, and peer-learning opportunities",
+              "Give them more lectures",
+              "Require them to attend every club event",
+              "Send them a list of textbooks",
+              "Reward only students who learn outside the formal sessions."
+            ],
+            "ar": [
+              "إنشاء تحديات مشاريع ومجموعات دراسة وموارد قراءة وجلسات برمجة وفرص للتعلم بين الأقران",
+              "إعطاؤهم المزيد من المحاضرات",
+              "إلزامهم بحضور كل فعاليات النادي",
+              "إرسال قائمة كتب دراسية إليهم",
+              "مكافأة الطلاب الذين يتعلمون خارج الحصص الرسمية فقط."
+            ],
+            "fr": [
+              "Créer des défis de projet, des groupes d'étude, des ressources de lecture, des sessions de codage et des occasions d'apprentissage entre pairs",
+              "Leur donner plus de cours magistraux",
+              "Exiger qu'ils assistent à chaque événement du club",
+              "Leur envoyer une liste de manuels",
+              "Récompenser uniquement les étudiants qui apprennent en dehors des séances officielles."
+            ]
+          },
+          "correct": 0
+        },
+        {
+          "id": "lc_04",
+          "question": {
+            "en": "A student has finished all the club's beginner Python training. What should IT do next?",
+            "ar": "أنهى طالب كامل تدريب بايثون للمبتدئين في النادي. ماذا يجب أن تفعل IT بعد ذلك؟",
+            "fr": "Un étudiant a terminé toute la formation Python débutant du club. Que doit faire l'IT ensuite ?"
+          },
+          "options": {
+            "en": [
+              "Wait until the next training cycle",
+              "Give them another beginner Python course",
+              "Tell them to learn independently",
+              "Provide a pathway toward projects, Data Analysis, ML, competitions, or more advanced topics",
+              "Repeat the same beginner lessons indefinitely."
+            ],
+            "ar": [
+              "الانتظار حتى دورة التدريب القادمة",
+              "إعطاؤه دورة بايثون أخرى للمبتدئين",
+              "إخباره بأن يتعلم بمفرده",
+              "توفير مسار نحو المشاريع أو تحليل البيانات أو التعلم الآلي أو المسابقات أو مواضيع أكثر تقدماً",
+              "إعادة دروس المبتدئين نفسها إلى أجل غير محدد."
+            ],
+            "fr": [
+              "Attendre le prochain cycle de formation",
+              "Lui donner un autre cours Python pour débutants",
+              "Lui dire d'apprendre seul",
+              "Lui proposer un parcours vers les projets, l'analyse de données, le ML, les compétitions ou des sujets plus avancés",
+              "Répéter indéfiniment les mêmes cours pour débutants."
+            ]
+          },
+          "correct": 3
+        },
+        {
+          "id": "lc_05",
+          "question": {
+            "en": "How can IT make sure students with different skill levels can participate?",
+            "ar": "كيف يمكن لخلية IT ضمان مشاركة الطلاب ذوي المستويات المختلفة؟",
+            "fr": "Comment l'IT peut-il s'assurer que des étudiants de niveaux différents puissent participer ?"
+          },
+          "options": {
+            "en": [
+              "Use the same activity for everyone",
+              "Focus only on advanced students",
+              "Create different levels, prerequisites, or progressive challenges",
+              "Focus only on beginners",
+              "Keep students of different levels apart and impose one entry level."
+            ],
+            "ar": [
+              "استخدام النشاط نفسه للجميع",
+              "التركيز على الطلاب المتقدمين فقط",
+              "إنشاء مستويات أو متطلبات مسبقة أو تحديات تدريجية مختلفة",
+              "التركيز على المبتدئين فقط",
+              "إبعاد الطلاب ذوي المستويات المختلفة وفرض مستوى دخول واحد."
+            ],
+            "fr": [
+              "Utiliser la même activité pour tout le monde",
+              "Se concentrer uniquement sur les étudiants avancés",
+              "Créer différents niveaux, prérequis ou défis progressifs",
+              "Se concentrer uniquement sur les débutants",
+              "Séparer les étudiants de niveaux différents et imposer un seul niveau d'entrée."
+            ]
+          },
+          "correct": 2
+        },
+        {
+          "id": "lc_06",
+          "question": {
+            "en": "Which initiative would best help students discover their technical interests?",
+            "ar": "أي مبادرة ستساعد الطلاب أكثر على اكتشاف اهتماماتهم التقنية؟",
+            "fr": "Quelle initiative aiderait le mieux les étudiants à découvrir leurs centres d'intérêt techniques ?"
+          },
+          "options": {
+            "en": [
+              "Only mandatory courses",
+              "Short introductions/workshops covering different areas such as Data Analysis, ML, AI, NLP, Computer Vision, etc.",
+              "Asking everyone to learn the same technology",
+              "Giving them a list of university courses",
+              "Choose each student's technical interests for them based on their grades."
+            ],
+            "ar": [
+              "دورات إلزامية فقط",
+              "مقدمات/ورش قصيرة تغطي مجالات مختلفة مثل تحليل البيانات والتعلم الآلي والذكاء الاصطناعي ومعالجة اللغات الطبيعية والرؤية الحاسوبية وغيرها",
+              "مطالبة الجميع بتعلم التقنية نفسها",
+              "إعطاؤهم قائمة بمقررات الجامعة",
+              "اختيار اهتمامات كل طالب التقنية نيابة عنه اعتماداً على درجاته."
+            ],
+            "fr": [
+              "Uniquement des cours obligatoires",
+              "De courtes introductions/ateliers couvrant différents domaines comme l'analyse de données, le ML, l'IA, le NLP, la vision par ordinateur, etc.",
+              "Demander à tout le monde d'apprendre la même technologie",
+              "Leur donner une liste de cours universitaires",
+              "Choisir les intérêts techniques de chaque étudiant à sa place selon ses notes."
+            ]
+          },
+          "correct": 1
+        },
+        {
+          "id": "lc_07",
+          "question": {
+            "en": "What should IT do with resources from previous trainings?",
+            "ar": "ماذا يجب أن تفعل IT بموارد التدريبات السابقة؟",
+            "fr": "Que doit faire l'IT des ressources des formations précédentes ?"
+          },
+          "options": {
+            "en": [
+              "Delete them after the training",
+              "Keep them only on the trainer's computer",
+              "Publish everything randomly in Discord",
+              "Keep them organized in a learning library that students can access later",
+              "Leave the resources in private messages where students cannot find them later."
+            ],
+            "ar": [
+              "حذفها بعد انتهاء التدريب",
+              "الاحتفاظ بها على حاسوب المدرب فقط",
+              "نشر كل شيء بشكل عشوائي على ديسكورد",
+              "الاحتفاظ بها منظمة في مكتبة تعليمية يستطيع الطلاب الوصول إليها لاحقاً",
+              "ترك الموارد في الرسائل الخاصة حيث يصعب على الطلاب العثور عليها لاحقاً."
+            ],
+            "fr": [
+              "Les supprimer après la formation",
+              "Les garder uniquement sur l'ordinateur du formateur",
+              "Tout publier au hasard sur Discord",
+              "Les conserver de manière organisée dans une bibliothèque d'apprentissage accessible aux étudiants plus tard",
+              "Laisser les ressources dans des messages privés où les étudiants auront du mal à les retrouver."
+            ]
+          },
+          "correct": 3
+        }
+      ]
+    },
+    {
+      "id": "external",
+      "name": {
+        "en": "External Development",
+        "ar": "التطوير الخارجي",
+        "fr": "Développement externe"
+      },
+      "questions": [
+        {
+          "id": "ex_01",
+          "question": {
+            "en": "How can IT help students connect their learning with the real Data Science ecosystem?",
+            "ar": "كيف يمكن لخلية IT مساعدة الطلاب على ربط تعلمهم بالمنظومة الحقيقية لعلوم البيانات؟",
+            "fr": "Comment l'IT peut-il aider les étudiants à relier leur apprentissage à l'écosystème réel de la Data Science ?"
+          },
+          "options": {
+            "en": [
+              "Focus exclusively on university courses",
+              "Tell students to search for opportunities themselves",
+              "Organize only internal events",
+              "Wait until students graduate before they look for practical opportunities.",
+              "Introduce students to competitions, hackathons, open-source projects, conferences, research, and industry opportunities"
+            ],
+            "ar": [
+              "التركيز حصراً على المقررات الجامعية",
+              "إخبار الطلاب بأن يبحثوا عن الفرص بأنفسهم",
+              "تنظيم فعاليات داخلية فقط",
+              "انتظار تخرج الطلاب قبل البحث عن فرص عملية.",
+              "تعريف الطلاب بالمسابقات والهاكاثونات والمشاريع مفتوحة المصدر والمؤتمرات والبحث العلمي وفرص سوق العمل"
+            ],
+            "fr": [
+              "Se concentrer exclusivement sur les cours universitaires",
+              "Dire aux étudiants de chercher eux-mêmes les opportunités",
+              "N'organiser que des événements internes",
+              "Attendre que les étudiants obtiennent leur diplôme avant de chercher des occasions pratiques.",
+              "Présenter aux étudiants les compétitions, hackathons, projets open source, conférences, la recherche et les opportunités du monde professionnel"
+            ]
+          },
+          "correct": 4
+        },
+        {
+          "id": "ex_02",
+          "question": {
+            "en": "If the club wants to invite a Data Scientist from industry, what could IT contribute?",
+            "ar": "إذا أراد النادي دعوة عالم بيانات من الصناعة، فماذا يمكن أن تقدم IT؟",
+            "fr": "Si le club veut inviter un Data Scientist de l'industrie, que pourrait apporter l'IT ?"
+          },
+          "options": {
+            "en": [
+              "Define relevant technical topics and help prepare questions, workshop content, or technical activities",
+              "Nothing; ER should handle everything",
+              "Design the invitation poster",
+              "Contact sponsors",
+              "Ask the guest to prepare a general, nontechnical talk without IT input."
+            ],
+            "ar": [
+              "تحديد المواضيع التقنية ذات الصلة والمساعدة في إعداد الأسئلة أو محتوى الورشة أو الأنشطة التقنية",
+              "لا شيء؛ على العلاقات الخارجية (ER) التعامل مع كل شيء",
+              "تصميم ملصق الدعوة",
+              "التواصل مع الرعاة",
+              "مطالبة الضيف بإعداد عرض عام غير تقني دون مشاركة IT."
+            ],
+            "fr": [
+              "Définir les sujets techniques pertinents et aider à préparer les questions, le contenu de l'atelier ou les activités techniques",
+              "Rien ; l'ER doit tout gérer",
+              "Concevoir l'affiche d'invitation",
+              "Contacter les sponsors",
+              "Demander à l'invité de préparer une présentation générale non technique sans contribution de l'IT."
+            ]
+          },
+          "correct": 0
+        }
+      ]
+    }
+  ]
+}

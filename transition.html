@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Transferring to the Data Space Knowledge Questions mission">
+	<title>Data Space | Mission Transfer</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Orbitron:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css?v=it-cell-1">
+	<link rel="stylesheet" href="transition.css?v=handoff-1">
+</head>
+<body class="transition-page">
+	<div class="cosmos" aria-hidden="true">
+		<div class="stars stars-small"></div>
+		<div class="stars stars-bright"></div>
+		<div class="planet planet-teal"><span class="crater crater-a"></span><span class="crater crater-b"></span><span class="crater crater-c"></span><span class="crater crater-d"></span></div>
+		<div class="planet planet-amber"><span class="crater crater-a"></span><span class="crater crater-b"></span><span class="crater crater-c"></span></div>
+		<div class="planet planet-blue"></div>
+		<div class="asteroid asteroid-one"></div>
+		<div class="asteroid asteroid-two"></div>
+		<div class="asteroid asteroid-three"></div>
+	</div>
+
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="Data Space home">
+			<img class="brand-logo" src="assets/data_space.svg" alt="Data Space">
+			<span><strong>DATA SPACE</strong><small>ENSSEA OPEN DAY</small></span>
+		</a>
+		<div class="status-pill"><span class="status-dot"></span> NEXT MISSION LOADING</div>
+	</header>
+
+	<main class="handoff-screen" aria-live="polite">
+		<div class="handoff-stars" aria-hidden="true"></div>
+		<div class="handoff-copy">
+			<p class="eyebrow">MISSION TRANSFER</p>
+			<h1>Entering<br><span>Knowledge Questions</span></h1>
+			<p class="handoff-caption">Preparing your next mission…</p>
+			<div class="handoff-progress" role="progressbar" aria-label="Loading Knowledge Questions" aria-valuemin="0" aria-valuemax="100">
+				<span></span>
+			</div>
+		</div>
+		<svg class="ejected-crew" id="ejected-crew" viewBox="0 0 220 260" aria-hidden="true" focusable="false">
+			<g stroke="#080b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+				<rect x="15" y="83" width="55" height="91" rx="22" fill="#0c9fc4" />
+				<path d="M55 159v54a22 22 0 0 0 44 0v-29h25v29a22 22 0 0 0 44 0v-54" fill="#0c9fc4" />
+				<path d="M47 174V83a67 67 0 0 1 134 0v91a20 20 0 0 1-20 20H67a20 20 0 0 1-20-20Z" fill="#0c9fc4" />
+				<path d="M97 53h49a25 25 0 0 1 25 25v20a18 18 0 0 1-18 18h-52a20 20 0 0 1-20-20V78a25 25 0 0 1 16-25Z" fill="#a9e5f6" />
+			</g>
+			<path d="M105 61h37a18 18 0 0 1 18 18v8h-57a14 14 0 0 1-14-14v-1a11 11 0 0 1 16-11Z" fill="#f5fcff" opacity=".88" />
+		</svg>
+	</main>
+	<script src="scripts/transition.js?v=handoff-1" defer></script>
+</body>
+</html>
