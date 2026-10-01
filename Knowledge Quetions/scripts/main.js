@@ -17,6 +17,53 @@ const answerFeedback = document.querySelector("#answer-feedback");
 const topicPills = document.querySelectorAll(".topic-pill");
 const correctWireAudio = document.querySelector("#correct-wire-audio");
 
+const stepScreens = {
+	language: languageScreen,
+	welcome: welcomeScreen,
+	rules: rulesScreen,
+	level: levelScreen,
+	game: gameScreen
+};
+const stepFocusTargets = {
+	language: languageOptions[0],
+	welcome: nameInput,
+	rules: startGameButton,
+	level: levelScreen,
+	game: questionText
+};
+const wizardSession = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+const showStep = (step, restoreFocus = false) => {
+	Object.entries(stepScreens).forEach(([name, screen]) => {
+		screen.classList.toggle("is-hidden", name !== step);
+	});
+	if (restoreFocus) stepFocusTargets[step]?.focus({ preventScroll: true });
+};
+
+const goToStep = (step) => {
+	if (!stepScreens[step]) return;
+	showStep(step);
+	try {
+		window.history.pushState({ wizardSession, wizardStep: step }, "", window.location.href);
+	} catch (error) {
+		console.warn("This browser could not save the current game step.", error);
+	}
+};
+
+try {
+	window.history.pushState({ wizardSession, wizardStep: "language" }, "", window.location.href);
+} catch (error) {
+	console.warn("This browser could not initialize game step history.", error);
+}
+
+window.addEventListener("popstate", (event) => {
+	if (event.state?.wizardSession !== wizardSession) {
+		if (event.state?.wizardSession) window.history.back();
+		return;
+	}
+	if (stepScreens[event.state.wizardStep]) showStep(event.state.wizardStep, true);
+});
+
 let questionBank = [];
 let gameState = DataSpaceState.reset();
 let currentQuestion;
@@ -172,8 +219,7 @@ languageOptions.forEach((option) => {
 		localStorage.setItem("dataSpaceQuestionLanguage", selectedLanguage);
 		languageOptions.forEach((item) => item.classList.remove("is-selected"));
 		option.classList.add("is-selected");
-		languageScreen.classList.add("is-hidden");
-		welcomeScreen.classList.remove("is-hidden");
+		goToStep("welcome");
 		nameInput.focus();
 	});
 });
@@ -183,15 +229,13 @@ nameForm.addEventListener("submit", (event) => {
 	const name = nameInput.value.trim();
 	if (!name) return;
 	crewName.textContent = name;
-	welcomeScreen.classList.add("is-hidden");
-	rulesScreen.classList.remove("is-hidden");
+	goToStep("rules");
 	startGameButton.focus();
 });
 
 
 startGameButton.addEventListener("click", () => {
-	rulesScreen.classList.add("is-hidden");
-	levelScreen.classList.remove("is-hidden");
+	goToStep("level");
 	levelScreen.focus({ preventScroll: true });
 });
 
@@ -199,9 +243,9 @@ levelOptions.forEach((option) => {
 	option.addEventListener("click", () => {
 		selectedLevel = option.dataset.level;
 		if (!["easy", "intermediate", "high"].includes(selectedLevel)) return;
+		gameState = DataSpaceState.reset();
 		difficultyReadout.textContent = `LEVEL / ${selectedLevel.toUpperCase()}`;
-		levelScreen.classList.add("is-hidden");
-		gameScreen.classList.remove("is-hidden");
+		goToStep("game");
 		questionText.focus({ preventScroll: true });
 		loadQuestions();
 	});
